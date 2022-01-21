@@ -459,3 +459,36 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+.portfolio-item-social_list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.portfolio-item-social-list_item {
+    margin: 0 .5em;
+}
+
+.portfolio-item-social-list_link {
+    padding: .5em;
+}
+
+.lower-section {
+    color: var(--clr-accent);
+    text-align: center;
+    font-size: var(--fs-h1);
+}
+
+.lower-section a {
+    color: inherit;
+    text-decoration: none; 
+}
+
+.portfolio-item-social-list_link:hover {
+    opacity: .7;
+}
+
+
+
