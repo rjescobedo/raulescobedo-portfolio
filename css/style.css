@@ -55,6 +55,7 @@ section {
 img {
     display: block;
     max-width: 100%;
+    border-radius: 3px;
 }
 
 strong { font-weight: var(--fw-bold) ;}
@@ -67,9 +68,9 @@ strong { font-weight: var(--fw-bold) ;}
 /* Buttons */
 .btn {
     display: inline-block;
-    padding: .5em 2.5em;
+    padding: .5em 12px;
     background: var(--clr-accent);
-    color: var(--clr-dark);
+    color: var(--clr-light);
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -77,6 +78,8 @@ strong { font-weight: var(--fw-bold) ;}
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    margin: .5em;
+    border-radius: 3px;
 
 }
 
@@ -120,6 +123,7 @@ h3 { font-size: var(--fs-h3) }
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
     color: var(--clr-light);
+    border-radius: 3px;
 }
 
 .section_subtitle--work {
@@ -402,6 +406,63 @@ header {
 .portfolio_item:focus .portfolio_img {
     transform: scale(1.2);
     opacity: .75;
+}
+
+/* My Education */
+.my-education {
+    background-color: var(--clr-light);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    color: var(--clr-dark);
+    text-align: center;
+}
+
+.section_title--education {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section_title--education::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: .5em auto 1em;
+    background: var(--clr-dark);
+    opacity: 0.5;
+}
+
+.education {
+    margin-bottom: 4em;
+}
+
+.education::after {
+    content: '';
+    display: block;
+    width: 5em;
+    height: 1px;
+    margin: .5em auto 1em;
+    background: var(--clr-dark);
+    opacity: 0.5;
+}
+
+.education-item {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .service + .service {
+        margin-left: 2em;
+    }
 }
 
 /* Footer */
