@@ -58,6 +58,10 @@ img {
     border-radius: 3px;
 }
 
+.portfolio-banner {
+    border: 2px solid var(--clr-accent);
+}
+
 strong { font-weight: var(--fw-bold) ;}
 
 :focus {
