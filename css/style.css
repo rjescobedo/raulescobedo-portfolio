@@ -243,9 +243,6 @@ header {
 .hamburger::after { bottom: 6px; }
 
 
-
-
-
 /* Intro Section */
 .intro {
     position: relative;
@@ -289,7 +286,7 @@ header {
     }
 }
 
-/* My Services */
+/* My Skills */
 .my-services {
     background-color: var(--clr-dark);
     background-image: url(../img/services-bg.jpg);
@@ -391,7 +388,7 @@ header {
 }
 
 .portfolio_item {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     overflow: hidden;
 }
 
