@@ -4,22 +4,34 @@
   "description": "Raul Escobedo's Portfolio",
   "main": "index.html",
   "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "lite": "lite-server",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run lite",
-    "lite": "lite-server"
-
+    "watch:all": "parallelshell 'npm run lite'",
+    "usemin": "usemin myportfolio.html -d dist --htmlmin -o dist/myportfolio.html && usemin thetrainer.html -d dist --htmlmin -o dist/thetrainer.html && usemin index.html -d dist --htmlmin -o dist/index.html"
+   
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rjescobedo/raulescobedo-portfolio.git"
   },
-  "author": "",
+  "author": "Raul Escobedo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rjescobedo/raulescobedo-portfolio/issues"
   },
   "homepage": "https://github.com/rjescobedo/raulescobedo-portfolio#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   }
 }
