@@ -9,7 +9,7 @@
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
     "lite": "lite-server",
-    "start": "npm run watch:all",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:all": "parallelshell 'npm run lite'",
     "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony",

@@ -143,8 +143,14 @@ header {
     padding: 1em;
 }
 
-.logo {
+.logo a{
     max-width: 100px;
+    color: var(--clr-accent);
+    text-decoration: none;
+}
+
+.logo:hover {
+    opacity: .7;
 }
 
 .nav {
