@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties....Custom these... */
-
+/* Custom Properties */
 :root {
     --ff-primary: 'Lora', serif ;
     --ff-secondary: 'Roboto Slab', serif;
@@ -13,8 +12,8 @@
     --fw-reg: 400;
     --fw-bold: 700;
 
-    --clr-light: #303030;
-    --clr-dark: #fff;
+    --clr-light: #fff;
+    --clr-dark: #303030;
     --clr-accent: #fcb928;
 
     --fs-h1: 3rem;
@@ -40,8 +39,8 @@ html {
 }
 
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-dark);
+    color: var(--clr-light);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -74,7 +73,7 @@ strong { font-weight: var(--fw-bold) ;}
     display: inline-block;
     padding: .5em 2.5em;
     background: var(--clr-accent);
-    color: var(--clr-light);
+    color: var(--clr-dark);
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -126,7 +125,7 @@ h3 { font-size: var(--fs-h3) }
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
-    color: var(--clr-light);
+    color: var(--clr-dark);
     border-radius: 3px;
 }
 
@@ -155,8 +154,8 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-light);
+    color: var(--clr-dark);
     top: 0;
     bottom: 0;
     left: 0;
@@ -296,7 +295,7 @@ header {
 .my-services {
     background-color: var(--clr-dark);
     background-image: url(../img/services-bg.jpg);
-    background-blend-mode: soft-light;
+    background-blend-mode: lighten;
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
@@ -322,8 +321,12 @@ header {
 }
 
 .service {
-    max-width: 500px;
+    max-width: 300px;
     margin: 0 auto;
+}
+
+.service h3 {
+    color: var(--clr-accent);
 }
 
 @media (min-width: 800px) {
@@ -382,8 +385,8 @@ header {
 
 /* My Work */
 .my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
 
 }
@@ -394,7 +397,7 @@ header {
 }
 
 .portfolio_item {
-    background: var(--clr-dark);
+    background: var(--clr-light);
     overflow: hidden;
 }
 
@@ -417,10 +420,10 @@ header {
 
 /* My Education */
 .my-education {
-    background-color: var(--clr-light);
+    background-color: var(--clr-dark);
     background-blend-mode: soft-light;
     background-size: cover;
-    color: var(--clr-dark);
+    color: var(--clr-light);
     text-align: center;
 }
 
@@ -435,7 +438,7 @@ header {
     width: 2em;
     height: 1px;
     margin: .5em auto 1em;
-    background: var(--clr-dark);
+    background: var(--clr-light);
     opacity: 0.5;
 }
 
@@ -449,7 +452,7 @@ header {
     width: 5em;
     height: 1px;
     margin: .5em auto 1em;
-    background: var(--clr-dark);
+    background: var(--clr-light);
     opacity: 0.5;
 }
 
