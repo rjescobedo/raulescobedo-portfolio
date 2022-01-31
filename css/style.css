@@ -414,11 +414,6 @@ h5 { font-size: var(--fs-h5) }
     color: var(--clr-hover-accent);
 }
 
-.footer-muted-text {
-    padding-top: 3em;
-    font-size: 1rem;
-}
-
 .social-list {
     list-style: none;
     display: flex;
