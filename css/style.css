@@ -241,6 +241,8 @@ h5 { font-size: var(--fs-h5) }
     }
 }
 
+/* About Me */
+
 .about-me {
     max-width: 1000;
     margin: 0 auto;
@@ -324,7 +326,7 @@ h5 { font-size: var(--fs-h5) }
 }
 
 .coming-soon {
-    opacity: .4;
+    opacity: .6;
 }
 
 /* My Education */
