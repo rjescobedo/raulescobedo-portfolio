@@ -386,6 +386,10 @@ h5 { font-size: var(--fs-h5) }
     }
 }
 
+.education-btn {
+    margin: .2em;
+}
+
 /* Footer */
 .footer {
     background-color: #111;
