@@ -323,6 +323,10 @@ h5 { font-size: var(--fs-h5) }
     opacity: .75;
 }
 
+.coming-soon {
+    opacity: .4;
+}
+
 /* My Education */
 .my-education {
     background-color: var(--clr-dark);
