@@ -8,26 +8,30 @@
     <!-- build:css css/main.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"/> 
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <!-- endbuild -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="#"><h3>&lt;raulescobedo/&gt;</h3></a>
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav_list">
-                <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
-                <li class="nav_item"><a href="#services" class="nav_link">My Services</a></li>
-                <li class="nav_item"><a href="#about" class="nav_link">About Me</a></li>
-                <li class="nav_item"><a href="#work" class="nav_link">My Work</a></li>
-                <li class="nav_item"><a href="#education" class="nav_link">Education</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+            <div class="container-fluid">
+                <div class="logo d-sm-none">
+                    <a href="#"><h4>&lt;raulescobedo/&gt;</h4></a>
+                </div>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#portfolioNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="portfolioNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services"><i class="fas fa-code fa-lg"></i> Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#work"><i class="fas fa-laptop-code fa-lg"></i> Work</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education"><i class="fas fa-school fa-lg"></i> Education</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -36,37 +40,42 @@
         <h1 class="section_title section_title--intro">
             Hi, I am<strong>Raul Escobedo</strong>
         </h1>
-        <p class="secton_subtitle section_subtitle--intro">Software Engineer</p>
+        <h3 class="secton_subtitle section_subtitle--intro">Software Developer</h3>
         <img src="img/raul.jpg" alt="a picture of Jane Smith smiling" class="intro_img">
     </section>
 
     <!-- Services -->
     <section class="my-services" id="services">
-        <h2 class="section_title section_title--services">What are my skills</h2>
+        <h1 class="section_title section_title--services">What are my skills</h1>
         <div class="services">
             <div class="service">
                 <h3>HTML/CSS/JavaScript</h3>
                 <p>I understand the core concepts of HTML, styling beautiful pages with CSS, and adding some fun and interactive functionality with JavaScript.</p>
+                <i class="fab fa-html5 fa-2x"></i>
+                <i class="fab fa-css3-alt fa-2x"></i>
+                <i class="fab fa-js-square fa-2x"></i>
             </div> <!--/ service -->
 
             <div class="service">
                 <h3>Bootstrap</h3>
                 <p>To build fast and responsive sites, I am comfortable using the Bootstrap library which uses pre-built components, a responsive grid system, and JavaScript plugins.</p>
+                <i class="fab fa-bootstrap fa-2x"></i>
             </div> <!--/ service -->
             
             <div class="service">
                 <h3>React</h3>
-                <p>A library built by Facebook, I can construct user friendly single-page applications with React, with custom and styled components. </p>
+                <p>A library built by Facebook, I can construct user friendly single-page applications with React, with custom and styled components.</p>
+                <i class="fab fa-react fa-2x"></i>
             </div> <!--/ service -->
         </div> <!--/ services-->
 
-        <a href="#work" class="btn">My Work</a>
+        <a href="#work" class="btn btn-warning">My Work</a>
     </section>
 
     <!-- About Me -->
     <section class="about-me" id="about">
-        <h2 class="section_title section_title--about">Who I am</h2>
-        <p class="section_subtitle section_subtitle--about">Designer & Developer based out of ATX</p>
+        <h1 class="section_title section_title--about">Who I am</h1>
+        <h3 class="section_subtitle section_subtitle--about">Designer & Developer based out of ATX</h3>
 
         <div class="about-me_body">
             <p>My name is Raul and I am an aspiring web and mobile developer. My journey began during the summer of 2021 when I was curious about the coding and the tech industry. I began by looking through some instructional YouTube videos, subscribed to Mosh Hamedani's program, and finally signed up for NuCamp's Introduction to HTML, CSS, and JavaScript. Once I began, I knew this was going to be a special journey for me and my family; therefore, I later enrolled in their Full Stack Web and Mobile Development Bootcamp.</p>
@@ -78,7 +87,7 @@
 
         <!-- My Work -->
         <section class="my-work" id="work">
-            <h2 class="section_title section_title--work">My Work</h2>
+            <h1 class="section_title section_title--work">My Work</h1>
             <p class="section_subtitle section_subtitle--work">A selection of my range of work</p>
 
             <div class="portfolio">
@@ -99,7 +108,7 @@
     
     <!-- Education/Resume -->
     <section class="my-education" id="education">
-        <h2 class="section_title section_title--education">My Education</h2>
+        <h1 class="section_title section_title--education">My Education</h1>
         <div class="education">
             <div class="education-item">
                 <h3>NuCamp, 2021-2022</h3>
@@ -115,14 +124,12 @@
             </div>
         </div>
         <div>
-            <a href="documents/HTML,_CSS_and_JavaScript-HTML,_CSS_and_JavaScript_Course_Certificate_9240.pdf" class="btn" target="_blank">HTML/CSS/JS</a>
-            <a href="documents/Bootstrap Certificate.pdf" class="btn" target="_blank">Bootstrap</a>
-            <a href="documents/Dynamic_with_React-React_Course_Certificate_11159.pdf" class="btn" target="_blank">React</a>
-            <a href="documents/Resume.pdf" class="btn" target="_blank">Resume</a>  
+            <a href="documents/HTML,_CSS_and_JavaScript-HTML,_CSS_and_JavaScript_Course_Certificate_9240.pdf" class="btn btn-warning" target="_blank">HTML/CSS/JS</a>
+            <a href="documents/Bootstrap Certificate.pdf" class="btn btn-warning" target="_blank">Bootstrap</a>
+            <a href="documents/Dynamic_with_React-React_Course_Certificate_11159.pdf" class="btn btn-warning" target="_blank">React</a>
+            <a href="documents/Resume.pdf" class="btn btn-warning" target="_blank">Resume</a>  
         </div>
     </section>
-
-
 
     <!-- Footer -->
     <footer class="footer">
@@ -130,22 +137,26 @@
         <ul class="social-list">
             <li class="social-list_item">
                 <a class="social-list_link" href="https://www.linkedin.com/in/raul-escobedo-8aa7a522/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-linkedin fa-lg"></i>
                 </a>
             </li>
             <li class="social-list_item">
                 <a class="social-list_link" href="https://github.com/rjescobedo" target="_blank">
-                    <i class="fab fa-github"></i>
+                    <i class="fab fa-github fa-lg"></i>
                 </a>
             </li>
             <li class="social-list_item">
                 <a class="social-list_link" href="https://www.instagram.com/rauljescobedo" target="_blank">
-                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-instagram fa-lg"></i>
                 </a>
             </li>
         </ul>
+        <p class="text-muted footer-muted-text">&copy; Created by Raul Escobedo</p>
     </footer>
     <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
 

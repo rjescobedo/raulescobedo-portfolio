@@ -5,59 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Trainer - React</title>
-       <!-- build:css css/main.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"/>
+      <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"/> 
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <!-- endbuild -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"/>  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"/> 
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><h3>&lt;raulescobedo/&gt;</h3></a>
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav_list">
-                <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
-                <li class="nav_item"><a href="index.html#services" class="nav_link">My Services</a></li>
-                <li class="nav_item"><a href="index.html#about" class="nav_link">About Me</a></li>
-                <li class="nav_item"><a href="index.html#work" class="nav_link">My Work</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+            <div class="container-fluid">
+                <div class="logo d-sm-none">
+                    <a href="index.html"><h4>&lt;raulescobedo/&gt;</h4></a>
+                </div>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#portfolioNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="portfolioNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#services"><i class="fas fa-code fa-lg"></i> Skills</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="index.html#work"><i class="fas fa-laptop-code fa-lg"></i> Work</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#education"><i class="fas fa-school fa-lg"></i> Education</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
     <!-- Introduction -->
     <section class="intro" id="home">
         <h1 class="section_title section_title--intro">
             The<strong>Trainer</strong>
         </h1>
-        <p class="secton_subtitle section_subtitle--intro">Workout Website & App</p>
+        <h3 class="secton_subtitle section_subtitle--intro">React</h3>
         <img src="img/thetrainer-image.png" alt="" class="intro_img">
     </section>
 
-    <div class="portfolio-item-individual">
-        <p><strong>The Trainer</strong> is my first major project that was started toward the beginning of my Bootstrap course. This website and application is intended for personal trainers and their clients to connect.</p>
-        <p>Trainers have the capability to create custom exercises and workouts to share with their clients. These exercises will have videos and images that will show the client how they are done with proper form. The client will also be able to read a short description of the exercises and log their set, reps, and weights used. Once a workout is completed, the trainer will be notified so they can congratulate and continue to encourage their clients. A chat component will also be built in the near future for continued communication regarding upcoming training sessions, the custom workouts, and more!</p>
-        <p>My biggest hurdle was converting this idea from basic HTML, CSS, and Boostrap to a React application. Along the way, I made edits to the layout and functionality so the user experience is positive. I plan to also convert this to React Native and offer this website and application to gyms and trainers.</p>
-    </div>
-    <div class="lower-section">
-        <ul class="portfolio-item-social_list">
-            <li class="portfolio-item-social-list_item">
-                <a class="portfolio-item-social-list_link" href="https://the-trainer-react.netlify.app/" target="_blank">
-                    <i class="fas fa-globe"></i>
-                </a>
-            </li>
-            <li class="portfolio-item-social-list_item">
-                <a class="portfolio-item-social-list_link" href="https://github.com/rjescobedo/thetrainer.git" target="_blank">
-                     <i class="fab fa-github"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
+    <section class="portfolio-section">
+        <div class="portfolio-item-individual">
+            <div class="lower-section">
+                <ul class="portfolio-item-social_list">
+                    <li class="portfolio-item-social-list_item">
+                            <i class="fab fa-react"></i>                        
+                    </li>
+                </ul>
+            </div>
+            <p><strong>The Trainer</strong> is my first major project that was started toward the beginning of my Bootstrap course. This website and application is intended for personal trainers and their clients to connect.</p>
+            <p>Trainers have the capability to create custom exercises and workouts to share with their clients. These exercises will have videos and images that will show the client how they are done with proper form. The client will also be able to read a short description of the exercises and log their set, reps, and weights used. Once a workout is completed, the trainer will be notified so they can congratulate and continue to encourage their clients. A chat component will also be built in the near future for continued communication regarding upcoming training sessions, the custom workouts, and more!</p>
+            <p>My biggest hurdle was converting this idea from basic HTML, CSS, and Boostrap to a React application. Along the way, I made edits to the layout and functionality so the user experience is positive. I plan to also convert this to React Native and offer this website and application to gyms and trainers.</p>
+        </div>
+        <div class="lower-section">
+            <ul class="portfolio-item-social_list">
+                <li class="portfolio-item-social-list_item">
+                    <a class="portfolio-item-social-list_link" href="https://the-trainer-react.netlify.app/" target="_blank">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </li>
+                <li class="portfolio-item-social-list_item">
+                    <a class="portfolio-item-social-list_link" href="https://github.com/rjescobedo/thetrainer.git" target="_blank">
+                         <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
 
     <!-- Footer -->
@@ -80,10 +93,14 @@
                 </a>
             </li>
         </ul>
+        <p class="text-muted footer-muted-text">&copy; Created by Raul Escobedo</p>
     </footer>
-    <!-- build:js js/main.js -->
-    <script src="js/scripts.js"></script>
-    <!-- endbuild -->
+   <!-- build:js js/main.js -->
+   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script src="js/scripts.js"></script>
+   <!-- endbuild -->
 
 </body>
 </html>
