@@ -221,7 +221,7 @@ h5 { font-size: var(--fs-h5) }
 
 .service {
     max-width: 300px;
-    margin: 0 auto;
+    margin: 3em auto;
 }
 
 .service h3 {
