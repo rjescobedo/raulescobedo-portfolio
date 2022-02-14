@@ -241,6 +241,10 @@ h5 { font-size: var(--fs-h5) }
     }
 }
 
+.service-icon {
+    padding: .2em .2em 0 .2em;
+}
+
 /* About Me */
 
 .about-me {
@@ -325,9 +329,9 @@ h5 { font-size: var(--fs-h5) }
     opacity: .75;
 }
 
-.coming-soon {
+/* .coming-soon {
     opacity: .6;
-}
+} */
 
 /* My Education */
 .my-education {

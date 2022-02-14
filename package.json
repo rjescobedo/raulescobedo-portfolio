@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:all": "parallelshell 'npm run lite'",
     "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony",
-    "usemin": "usemin myportfolio.html -d dist --htmlmin -o dist/myportfolio.html && usemin thetrainer.html -d dist --htmlmin -o dist/thetrainer.html && usemin thetrainer-bootstrap.html -d dist --htmlmin -o dist/thetrainer-bootstrap.html && usemin index.html -d dist --htmlmin -o dist/index.html"
+    "usemin": "usemin myportfolio.html -d dist --htmlmin -o dist/myportfolio.html && usemin thetrainer.html -d dist --htmlmin -o dist/thetrainer.html && usemin okb.html -d dist --htmlmin -o dist/okb.html && usemin index.html -d dist --htmlmin -o dist/index.html"
   },
   "repository": {
     "type": "git",
