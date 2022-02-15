@@ -1,12 +1,6 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav_link')
-
-navToggle.addEventListener('click', function() {
-    document.body.classList.toggle('nav-open');
-});
-
-navLinks.forEach(function(link) {
-    link.addEventListener('click', function() {
-        document.body.classList.remove('nav-open');
-    })
-})
+// const navLinks = document.querySelectorAll('.nav-item')
+// const menuToggle = document.getElementById('portfolioNavbar')
+// const bsCollapse = new bootstrap.Collapse(menuToggle)
+// navLinks.forEach((l) => {
+//     l.addEventListener('click', () => { bsCollapse.toggle() })
+// })
