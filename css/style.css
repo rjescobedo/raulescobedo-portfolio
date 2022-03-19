@@ -417,6 +417,11 @@ h5 { font-size: var(--fs-h5) }
     color: var(--clr-hover-accent);
 }
 
+.footer-text {
+    font-size: 1rem;
+    padding-top: 6em;
+}
+
 .social-list {
     list-style: none;
     display: flex;
@@ -427,6 +432,10 @@ h5 { font-size: var(--fs-h5) }
 
 .social-list_item {
     margin: 0 .5em;
+}
+
+.social-list_item:hover {
+    transform: scale(1.1);
 }
 
 .social-list_link {
