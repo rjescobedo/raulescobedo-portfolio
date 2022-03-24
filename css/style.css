@@ -144,7 +144,13 @@ h5 { font-size: var(--fs-h5) }
 
 .navbar {
     background-color: var(--clr-accent);
+    opacity: .98;
 }
+
+.nav-link {
+    text-align: center;
+}
+
 
 
 /* Intro Section */
@@ -529,6 +535,8 @@ h5 { font-size: var(--fs-h5) }
 .portfolio-item-social-list_link:hover {
     color: var(--clr-hover-accent);
 }
+
+
 
 
 
