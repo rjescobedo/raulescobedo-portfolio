@@ -14,7 +14,7 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-hover-dark: #535353; 
+    --clr-hover-dark: #303030c1; 
     --clr-accent: #fcb928;
     --clr-hover-accent: #b98a23; 
 
@@ -506,6 +506,9 @@ h5 { font-size: var(--fs-h5) }
 
 .portfolio-item-social-list_item {
     margin: 0 .5em;
+}
+.portfolio-item-social-list_item:hover {
+    transform: scale(1.05);
 }
 
 .portfolio-item-social-list_link {
