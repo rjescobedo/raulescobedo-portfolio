@@ -144,7 +144,7 @@ h5 { font-size: var(--fs-h5) }
 
 .navbar {
     background-color: var(--clr-accent);
-    opacity: .98;
+    opacity: .95;
 }
 
 .nav-link {
