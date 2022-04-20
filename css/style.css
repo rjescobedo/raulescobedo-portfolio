@@ -141,7 +141,6 @@ h5 { font-size: var(--fs-h5) }
 }
 
 /* Navigation */
-
 .navbar {
     background-color: var(--clr-accent);
     opacity: .95;
@@ -150,8 +149,6 @@ h5 { font-size: var(--fs-h5) }
 .nav-link {
     text-align: center;
 }
-
-
 
 /* Intro Section */
 .intro {
@@ -232,6 +229,7 @@ h5 { font-size: var(--fs-h5) }
 
 .service h3 {
     color: var(--clr-accent);
+    font-size: 1.5em;
 }
 
 @media (min-width: 800px) {
@@ -535,6 +533,13 @@ h5 { font-size: var(--fs-h5) }
 .portfolio-item-social-list_link:hover {
     color: var(--clr-hover-accent);
 }
+
+/* Custom Icons */
+.mongo-icon {
+    margin: auto;
+    width: 3em;
+}
+
 
 
 
