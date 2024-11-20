@@ -13,7 +13,7 @@
     --fw-bold: 700;
 
     --clr-light: #fff;
-    --clr-dark: #272626;
+    --clr-dark: #232323;
     --clr-hover-dark: #000000c1; 
     --clr-accent: #fcb928;
     --clr-hover-accent: #b98a23; 
@@ -123,8 +123,8 @@ h5 { font-size: var(--fs-h5) }
 }
 
 .section_subtitle--work {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
+    color: var(--clr-dark);
+    font-weight: var(--fw-reg);
     margin-bottom: 2em;
 }
 
@@ -548,7 +548,5 @@ h5 { font-size: var(--fs-h5) }
     margin: auto;
     width: 3em;
 }
-
-
 
 
