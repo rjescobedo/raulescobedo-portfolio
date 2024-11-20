@@ -13,8 +13,8 @@
     --fw-bold: 700;
 
     --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-hover-dark: #303030c1; 
+    --clr-dark: #272626;
+    --clr-hover-dark: #000000c1; 
     --clr-accent: #fcb928;
     --clr-hover-accent: #b98a23; 
 
@@ -145,7 +145,14 @@ h5 { font-size: var(--fs-h5) }
 /* Navigation */
 .navbar {
     background-color: var(--clr-accent);
-    opacity: .95;
+}
+
+.navbar-item{
+    color: var(--clr-dark);
+}
+
+.navbar-nav li:hover {
+    transform: scale(1.05);
 }
 
 .nav-link {
@@ -401,10 +408,10 @@ h5 { font-size: var(--fs-h5) }
 
 /* Footer */
 .footer {
-    background-color: #111;
-    color: var(--clr-accent);
+    background-color: var(--clr-accent);
+    color: var(--clr-dark);
     text-align: center;
-    padding: 2.5em 0;
+    padding: .5em 0;
     font-size: var(--fs-h3);
 }
 
@@ -420,12 +427,12 @@ h5 { font-size: var(--fs-h5) }
 .footer_link:hover,
 .social-list_link:hover {
     text-decoration: none;
-    color: var(--clr-hover-accent);
+    color: var(--clr-hover-dark);
 }
 
 .footer-text {
     font-size: 1rem;
-    padding-top: 6em;
+    padding: 4rem 0 0 0;
 }
 
 .social-list {
