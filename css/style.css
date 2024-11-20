@@ -73,11 +73,13 @@ strong { font-weight: var(--fw-bold) ;}
 }
 
 /* Buttons */
+.btn {
+    transition: transform 0.3s;
+}
 
 .btn:hover {
     transform: scale(1.05);
 }
-
 
 /* Typography */
 h1, 
@@ -539,8 +541,6 @@ h5 { font-size: var(--fs-h5) }
     margin: auto;
     width: 3em;
 }
-
-
 
 
 
