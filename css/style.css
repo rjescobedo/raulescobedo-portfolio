@@ -14,9 +14,9 @@
 
     --clr-light: #fff;
     --clr-dark: #232323;
-    --clr-hover-dark: #000000c1; 
+    --clr-hover-dark: #1d1d1dc1; 
     --clr-accent: #fcb928;
-    --clr-hover-accent: #b98a23; 
+    --clr-hover-accent: #9d6f0b; 
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -78,7 +78,7 @@ strong { font-weight: var(--fw-bold) ;}
 }
 
 .btn:hover {
-    transform: scale(1.05);
+    transform: scale(1.05)
 }
 
 /* Typography */
@@ -145,6 +145,7 @@ h5 { font-size: var(--fs-h5) }
 /* Navigation */
 .navbar {
     background-color: var(--clr-accent);
+    opacity: .95;
 }
 
 .navbar-item{
@@ -410,9 +411,11 @@ h5 { font-size: var(--fs-h5) }
 .footer {
     background-color: var(--clr-accent);
     color: var(--clr-dark);
-    text-align: center;
-    padding: .5em 0;
+    padding: 2rem;
     font-size: var(--fs-h3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer a { 
@@ -432,19 +435,20 @@ h5 { font-size: var(--fs-h5) }
 
 .footer-text {
     font-size: 1rem;
-    padding: 4rem 0 0 0;
+    padding: 0;
+    margin: 0;
 }
 
 .social-list {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 2em 0 0;
     padding: 0;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .social-list_item {
-    margin: 0 .5em;
+    padding: 1.5rem;
 }
 
 .social-list_item:hover {
@@ -452,7 +456,7 @@ h5 { font-size: var(--fs-h5) }
 }
 
 .social-list_link {
-    padding: .5em;
+   
 }
 
 /* Individual Portfolio Item Styles */
@@ -520,9 +524,10 @@ h5 { font-size: var(--fs-h5) }
 .portfolio-item-social-list_item {
     margin: 0 .5em;
 }
-.portfolio-item-social-list_item:hover {
+
+/*.portfolio-item-social-list_item:hover {
     transform: scale(1.05);
-}
+}*/
 
 .portfolio-item-social-list_link {
     padding: .5em;
