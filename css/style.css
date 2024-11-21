@@ -148,14 +148,6 @@ h5 { font-size: var(--fs-h5) }
     opacity: .95;
 }
 
-.navbar-item{
-    color: var(--clr-dark);
-}
-
-.navbar-nav li:hover {
-    transform: scale(1.05);
-}
-
 .nav-link {
     text-align: center;
 }
