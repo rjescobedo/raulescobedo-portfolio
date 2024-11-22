@@ -122,10 +122,29 @@ h5 { font-size: var(--fs-h5) }
     border-radius: 3px;
 }
 
+.project-container {
+    display: flex;
+    justify-content: center;
+}
+
+.section_subtitle--projects {
+    background: var(--clr-accent);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 2em;
+    color: var(--clr-dark);
+    border-radius: 3px;
+}
+
+
 .section_subtitle--work {
     color: var(--clr-dark);
     font-weight: var(--fw-reg);
     margin-bottom: 2em;
+}
+
+.section_title--work {
+    color: var(--clr-dark);
 }
 
 /* Header */
@@ -445,10 +464,6 @@ h5 { font-size: var(--fs-h5) }
 
 .social-list_item:hover {
     transform: scale(1.1);
-}
-
-.social-list_link {
-   
 }
 
 /* Individual Portfolio Item Styles */
