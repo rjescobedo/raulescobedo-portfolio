@@ -50,6 +50,62 @@ body {
     font-size: var(--fs-body);
     line-height: 1.6;
 }
+/* Dark Mode & Switch*/
+body.dark-mode {
+    background-color: var(--clr-dark);
+    color: #ffffff;
+}
+
+.my-work.dark-mode {
+    background-color: var(--clr-dark);
+    color: #ffffff;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 33px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--clr-hover-accent);
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+body.dark-mode .slider {
+    background-color: var(--clr-dark);
+}
+
+body.dark-mode .slider:before {
+    transform: translateX(26px);
+}
+
 
 section {
     padding: 5em 2em;
@@ -141,10 +197,6 @@ h5 { font-size: var(--fs-h5) }
     color: var(--clr-dark);
     font-weight: var(--fw-reg);
     margin-bottom: 2em;
-}
-
-.section_title--work {
-    color: var(--clr-dark);
 }
 
 /* Header */
@@ -317,10 +369,7 @@ h5 { font-size: var(--fs-h5) }
 
 /* My Work */
 .my-work {
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
     text-align: center;
-
 }
 
 .my-work img {

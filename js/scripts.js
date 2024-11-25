@@ -7,3 +7,11 @@ $(document).click(function (event) {
         $navbar.collapse('hide');
     }
 });
+
+//Dark mode
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    darkModeToggle.classList.toggle('dark-mode');
+});
