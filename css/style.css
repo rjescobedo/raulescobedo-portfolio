@@ -268,11 +268,12 @@ h5 { font-size: var(--fs-h5) }
 
 /* My Skills */
 .my-services {
-    background-image: url(../img/programming-background-with-html.jpg);
+    background-image: url(../img/programming-background-with-html.avif);
     background-blend-mode: lighten;
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
+    background-position: center;
 }
 
 .my-services h1 {
@@ -310,6 +311,9 @@ h5 { font-size: var(--fs-h5) }
 }
 
 @media (min-width: 800px) {
+    .my-services {
+        background-position: center;
+    }
     .services {
         display: flex;
         max-width: 1000px;
