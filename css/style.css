@@ -13,7 +13,7 @@
     --fw-bold: 700;
 
     --clr-light: #fff;
-    --clr-dark: #232323;
+    --clr-dark: #1c1c1c;
     --clr-hover-dark: #1d1d1dc1; 
     --clr-accent: #fcb928;
     --clr-hover-accent: #9d6f0b; 
@@ -268,12 +268,15 @@ h5 { font-size: var(--fs-h5) }
 
 /* My Skills */
 .my-services {
-    background-color: var(--clr-dark);
-    background-image: url(../img/services-bg.jpg);
+    background-image: url(../img/programming-background-with-html.jpg);
     background-blend-mode: lighten;
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
+}
+
+.my-services h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .section_title--services {
@@ -303,6 +306,7 @@ h5 { font-size: var(--fs-h5) }
 .service h3 {
     color: var(--clr-accent);
     font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 @media (min-width: 800px) {
