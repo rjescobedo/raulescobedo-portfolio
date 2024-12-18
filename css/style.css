@@ -15,7 +15,7 @@
     --clr-light: #fff;
     --clr-dark: #1c1c1c;
     --clr-hover-dark: #1d1d1dc1; 
-    --clr-accent: #fcb928;
+    --clr-accent: rgb(252, 185, 40);
     --clr-hover-accent: #9d6f0b; 
 
     --fs-h1: 3rem;
@@ -129,12 +129,26 @@ strong { font-weight: var(--fw-bold) ;}
 }
 
 /* Buttons */
-.btn {
-    transition: transform 0.3s;
+.custom-button {
+    background-color: var(--clr-accent);
+    border: none;
+    padding: .5rem 1rem; /* Adjust the padding for better control of size */
+    border-radius: 20px;
+    transition: transform .4s ease, box-shadow .4s ease;
+    width: 130px; /* Set a fixed width for all buttons */
+    height: 50px; /* Set a fixed height for all buttons */
+    margin: .3rem;
 }
 
-.btn:hover {
-    transform: scale(1.05)
+.custom-button a {
+    text-decoration: none;
+    color: var(--clr-dark);
+    font-size: 1rem;
+}
+
+.custom-button:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 8px rgba(252, 185, 40, .9);
 }
 
 /* Typography */
