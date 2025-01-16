@@ -16,6 +16,21 @@ darkModeToggle.addEventListener('click', () => {
     darkModeToggle.classList.toggle('dark-mode');
 });
 
+//Dynamically load profile photo
+const img = document.querySelector('.intro_img');
+
+img.onload = () => {
+    img.classList.add('loaded');
+};
+
+
+  // Functionality for custom hamburger
+  $(document).ready(function(){
+    $(".hamburger").click(function(){
+      $(this).toggleClass("is-active");
+    });
+  });
+
 //Puns
 async function fetchPun() {
     try {
@@ -30,5 +45,4 @@ async function fetchPun() {
         document.getElementById('pun').innerText = "Error fetching pun: " + error.message;
     }
 }
-
 fetchPun();

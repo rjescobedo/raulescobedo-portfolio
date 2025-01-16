@@ -22,9 +22,11 @@
                 <div class="logo">
                     <a href="index.html#home"><h5>&lt raulEscobedo /&gt</h5></a>
                 </div>
-                <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="hamburger ml-auto" id="hamburger-1" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavbar">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
                 <div class="justify-content-end collapse navbar-collapse in" id="portfolioNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="index.html#home"><i class="fa fa-home"></i> Home</a></li>
@@ -50,7 +52,7 @@
     <section class="intro" id="home">
         <h1 class="section_title section_title--intro"><strong>OKB</strong>Hope Foundation</h1>
         <h3 class="secton_subtitle section_subtitle--intro">React</h3>
-        <img src="img/okb.png" alt="" class="intro_img">
+        <img src="img/okb.png" alt="Image of the OKB Hope Foundation Logo" class="intro_img" loading="lazy">
     </section>
 
     <section class="portfolio-section">
@@ -108,6 +110,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- endbuild -->
 </body>
 </html>
