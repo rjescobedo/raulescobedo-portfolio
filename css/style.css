@@ -759,7 +759,7 @@ h5 { font-size: var(--fs-h5) }
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 
 .section_title--form {
@@ -780,7 +780,7 @@ h5 { font-size: var(--fs-h5) }
 .form {
     background-color: var(--clr-accent);
     box-shadow: var(--bs);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 4px;
     width: 100%;
     margin: 1rem;
