@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raul Escobedo's Portfolio</title>
     <link rel="shortcut icon" type="image/svg" href="./img/favicon.svg"/>
-    <!-- build:css css/main.css -->
+ 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"/> 
     <link rel="stylesheet" href="css/style.css"/>
-    <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />-->
-    <!-- endbuild -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"/> 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" 
+    rel="stylesheet"/> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=contact_page" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
 </head>
 <body>
@@ -20,23 +21,25 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
              <div class="container-fluid">
                  <div class="logo">
-                     <a href="#"><h5>&lt raulEscobedo /&gt</h5></a>
+                     <a href="index.html"><h5>&ltraulEscobedo/&gt</h5></a>
                  </div>
                  <div class="hamburger ml-auto" id="hamburger-1" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavbar">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
                 </div>
-                 <div class="justify-content-end collapse navbar-collapse in" id="portfolioNavbar">
+                 <div class="justify-content-end collapse navbar-collapse" id="portfolioNavbar">
                      <ul class="navbar-nav">
                          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-home"></i> Home</a></li>
                          <li class="nav-item"><a class="nav-link" href="#services"><i class="fas fa-code"></i> Skills</a></li>
                          <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user"></i> About Me</a></li>
-                         <li class="nav-item dropdown">
+                         <li class="nav-item">
                             <a class="nav-link" href="#work"><i class="fas fa-laptop-code"></i> Projects</a>
                         </li>
                          <li class="nav-item"><a class="nav-link" href="#education"><i class="fas fa-school"></i> Education</a></li>
                          <li class="nav-item"><a class="nav-link" href="https://github.com/rjescobedo" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                         <li class="nav-item">
+                         <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa fa-address-card"></i> Contact</a></li>
                          <li class="nav-item">
                             <label class="switch">
                                 <input type="checkbox" id="dark-mode-toggle">
@@ -111,32 +114,60 @@
         <!-- My Work -->
         <section class="my-work" id="work">
             <h1 class="section_title section_title--work">My Projects</h1>
-            <div class="project-container">
-                <h5 class="section_subtitle--projects">A selection of my range of work</h5>
-            </div>
+            <h5 class="section_subtitle--projects">A selection of my range of work</h5>
             <div class="portfolio">
-                <!-- Portfolio Item -->
+              <!-- Portfolio Card -->
+              <div class="portfolio_card">
                 <a href="bakedwithgratitude.html" class="portfolio_item">
-                    <img src="img/bakedwithgratitude-img.png" alt="portfolio image 2" class="portfolio_img" loading="lazy">
+                  <img src="img/bakedwithgratitude-img.png" alt="Baked with Gratitude" class="portfolio_img" loading="lazy">
+                  <div class="portfolio_card_content">
+                    <h3>Baked with Gratitude</h3>
+                    <p>A small business website featuring baked goods and a contact form.</p>
+                  </div>
                 </a>
-                <!-- Portfolio Item -->
+              </div>
+              <!-- Portfolio Card -->
+              <div class="portfolio_card">
                 <a href="thetrainer.html" class="portfolio_item">
-                    <img src="img/thetrainer-image.png" alt="portfolio image 2" class="portfolio_img" loading="lazy">
+                  <img src="img/thetrainer-image.png" alt="The Trainer" class="portfolio_img" loading="lazy">
+                  <div class="portfolio_card_content">
+                    <h3>The Trainer</h3>
+                    <p>A fitness training app concept with a clean design.</p>
+                  </div>
                 </a>
-                <!-- Portfolio Item -->
+              </div>
+              <!-- Portfolio Card -->
+              <div class="portfolio_card">
                 <a href="okb.html" class="portfolio_item">
-                    <img src="img/okb-homepage.png" alt="portfolio image 2" class="portfolio_img" loading="lazy">
+                  <img src="img/okb-homepage.png" alt="OKB Homepage" class="portfolio_img" loading="lazy">
+                  <div class="portfolio_card_content">
+                    <h3>OKB Hope Foundation</h3>
+                    <p>An elegant website for a non-profit.</p>
+                  </div>
                 </a>
-                 <!-- Portfolio Item -->
-                 <a href="email_challenge.html" class="portfolio_item">
-                    <img src="img/email-challenge-image.png" alt="portfolio image 3" class="portfolio_img" loading="lazy">
+              </div>
+              <!-- Portfolio Card -->
+              <div class="portfolio_card">
+                <a href="email_challenge.html" class="portfolio_item">
+                  <img src="img/email-challenge-image.png" alt="Email Challenge" class="portfolio_img" loading="lazy">
+                  <div class="portfolio_card_content">
+                    <h3>Email Challenge</h3>
+                    <p>An engaging email template challenge.</p>
+                  </div>
                 </a>
-                <!-- Portfolio Item -->
+              </div>
+              <!-- Portfolio Card -->
+              <div class="portfolio_card">
                 <a href="myportfolio.html" class="portfolio_item">
-                    <img src="img/portfolio-image-new.png" alt="portfolio image 4" class="portfolio_img" loading="lazy">
+                  <img src="img/portfolio-image-new.png" alt="Portfolio" class="portfolio_img" loading="lazy">
+                  <div class="portfolio_card_content">
+                    <h3>Portfolio</h3>
+                    <p>A showcase of my personal and professional projects.</p>
+                  </div>
                 </a>
+              </div>
             </div>
-        </section>
+          </section>
     
     <!-- Education/Resume -->
     <section class="my-education" id="education">
@@ -197,6 +228,33 @@
         </div>
     </section>
 
+    <!-- Contact Form -->
+    <section id="contact" class="contact-form-container">
+        <h1 class="section_title section_title--form">Contact Me</h1>
+        <form id="contact-form" class="form" action="https://formspree.io/f/xrbbwgvy" method="POST">
+            <div class="form-item">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-item">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-item">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Number">
+            </div>
+            <div class="form-item">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+            </div>
+            <div class="form-button">
+                <button class="custom-button" type="submit">Submit</button>
+                <p id="status"></p>
+            </div>
+        </form>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <a href="mailto:raul.escobedo1012@gmail.com" class="footer_link">raul.escobedo1012@gmail.com</a>
@@ -229,7 +287,9 @@
     <!--<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- endbuild -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <!-- Bootstrap JS and Popper.js (necessary for dropdowns, tooltips, etc.) -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" defer></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" defer></script>
     <script src="js/scripts.js" defer></script>
 </body>
 </html>
