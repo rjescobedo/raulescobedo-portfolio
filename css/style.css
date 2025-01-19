@@ -15,7 +15,7 @@
 
     --clr-light: #fff;
     --clr-dark: #1c1c1c;
-    --clr-hover-dark: rgba(29, 29, 29, 0.757); 
+    --clr-hover-dark: #1c1c1cc1; 
     --clr-accent: #fcb928;
     --clr-hover-accent: #9d6f0b; 
 
@@ -247,7 +247,7 @@ h5 { font-size: var(--fs-h5) }
 /* Custom Hamburger */
 
 .hamburger .line{
-    width: 35px;
+    width: 30px;
     height: 2px;
     background-color: var(--clr-dark);
     display: block;
@@ -781,7 +781,7 @@ h5 { font-size: var(--fs-h5) }
     background-color: var(--clr-accent);
     box-shadow: var(--bs);
     padding: 1rem;
-    border-radius: 4px;
+    border-radius: 10px;
     width: 100%;
     margin: 1rem;
 }
@@ -799,14 +799,14 @@ h5 { font-size: var(--fs-h5) }
 }
 
 .form-item input {
-    border-radius: 3px;
+    border-radius: 4px;
     border: none;
     padding: 10px;
     margin-top: 10px;
 }
 
 .form-item textarea {
-    border-radius: 3px;
+    border-radius: 4px;
     border: none;
     padding: 10px;
     margin-top: 10px;
@@ -815,7 +815,7 @@ h5 { font-size: var(--fs-h5) }
 
 .form-item input:focus, textarea:focus {
     border-color: rgba(252, 185, 40, .5);
-    box-shadow: 0 0 5px rgba(67, 40, 24, 0.5);
+    box-shadow: 0 0 6px rgba(67, 40, 24, 0.5);
 }
 
 .form-button{
@@ -825,6 +825,7 @@ h5 { font-size: var(--fs-h5) }
 .form-button .custom-button {
     background-color: var(--clr-dark);
     color: var(--clr-light);
+    width: 140px;
 }
 
 .form-button .custom-button:hover {
