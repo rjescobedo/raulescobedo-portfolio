@@ -16,8 +16,8 @@
     --clr-light: #fff;
     --clr-dark: #1c1c1c;
     --clr-hover-dark: #1c1c1cc1; 
-    --clr-accent: #fcb928;
-    --clr-hover-accent: #9d6f0b; 
+    --clr-accent: rgb(252, 185, 40);
+    --clr-hover-accent: rgb(157, 111, 11); 
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -145,6 +145,10 @@ strong { font-weight: var(--fw-bold) ;}
     text-decoration: none;
     color: var(--clr-dark);
     font-size: 1rem;
+}
+
+.custom-button a:hover {
+    color: var(--clr-dark);
 }
 
 .custom-button:hover {
@@ -530,17 +534,18 @@ h5 { font-size: var(--fs-h5) }
   .portfolio_card_content {
     padding: 1rem;
     text-align: left;
+    background-color: var(--clr-dark);
   }
   
   .portfolio_card_content h3 {
     margin: 0 0 0.5rem;
     font-size: 1.25rem;
-    color: var(--clr-dark);
+    color: var(--clr-accent);
   }
   
   .portfolio_card_content p {
     margin: 0;
-    color: var(--clr-dark);
+    color: var(--clr-light);
   }
   
   .portfolio_card:hover .portfolio_img {
@@ -754,6 +759,37 @@ h5 { font-size: var(--fs-h5) }
 }
 
 /* Contact Form */
+.contact-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: .5rem;
+}
+
+.contact-item a {
+    padding: 1rem;
+    color: var(--clr-dark);
+    transition: color .3s ease, text-shadow .3s ease;
+}
+
+.contact-item a:hover {
+    color: var(--clr-accent);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+}
+
+.dark-mode .contact-item a{
+    padding: 1rem;
+    color: var(--clr-light);
+    transition: color .3s ease, text-shadow .3s ease;
+}
+
+.dark-mode .contact-item a:hover {
+    color: var(--clr-accent);
+    text-shadow: 0 0 5px rgba(252, 185, 40, .9);
+}
+
 .contact-form-container {
     display: flex;
     justify-content: center;
@@ -774,6 +810,10 @@ h5 { font-size: var(--fs-h5) }
     margin: .5em auto .5rem;
     background: var(--clr-dark);
     opacity: 0.5;
+}
+
+.dark-mode .section_title--form::after {
+    background: var(--clr-light);
 }
 
 
@@ -824,12 +864,13 @@ h5 { font-size: var(--fs-h5) }
 
 .form-button .custom-button {
     background-color: var(--clr-dark);
-    color: var(--clr-light);
-    width: 140px;
+    color: var(--clr-accent);
+    width: 150px;
 }
 
 .form-button .custom-button:hover {
     box-shadow: 0 4px 8px rgba(29, 29, 29, .9);
+    color: var(--clr-light);
 }
 
 #status {
