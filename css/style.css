@@ -539,6 +539,14 @@ h5 { font-size: var(--fs-h5) }
     height: 100%;
     box-sizing: border-box;
   }
+
+  .dark-mode .portfolio_card_content {
+    background-color: var(--clr-light);
+  }
+
+  .dark-mode .portfolio_card_content p {
+    color: var(--clr-dark);
+  }
   
   .portfolio_card_content h3 {
     margin: 0 0 0.5rem;
