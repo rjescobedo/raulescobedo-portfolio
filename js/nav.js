@@ -7,13 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Handle the hamburger toggle independently
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('is-active');
-        navbarCollapse.toggle();  // Toggle the navbar collapse
     });
     
     // Toggle "is-active" class on hamburger and close the navbar
     const closeNavbar = () => {
         if (navbarNav.classList.contains('show')) {
-            hamburger.classList.remove('is-active');
+            hamburger.classList.toggle('is-active');
             navbarCollapse.hide();
         }
     };
@@ -22,4 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
     navItems.forEach(navItem => {
         navItem.addEventListener('click', closeNavbar);
     });
+
 });
