@@ -250,19 +250,19 @@
         <form id="contact-form" class="form" netlify>
             <div class="form-item">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="on" required>
             </div>
             <div class="form-item">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="on" required>
             </div>
             <div class="form-item">
                 <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Your Number">
+                <input type="tel" id="phone" name="phone" autocomplete="on" placeholder="Your Number">
             </div>
             <div class="form-item">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Tell me how I can assist you" required></textarea>
+                <textarea id="message" name="message" placeholder="Tell me how I can assist you" autocomplete="off" required></textarea>
             </div>
             <div class="form-button">
                 <button class="custom-button" type="submit">Send Message</button>
@@ -297,12 +297,9 @@
         <p class="footer-text"><strong>💻 by Raul Escobedo</strong></p>
     </footer>
     <!-- build:js js/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js" defer></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js" defer></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-     <script src="js/form.js" defer></script>
-     <script src="js/nav.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/form.js" defer></script>
+    <script src="js/nav.js" defer></script>
     <script src="js/scripts.js" defer></script>
 </body>
 </html>
