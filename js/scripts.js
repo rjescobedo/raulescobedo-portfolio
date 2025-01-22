@@ -1,9 +1,20 @@
 //Dark mode
 const darkModeToggle = document.getElementById('dark-mode-toggle');
 
+const setTheme = (isDark) => {
+    document.body.classList.toggle('dark-mode', isDark);
+    darkModeToggle.classList.toggle('dark-mode', isDark);
+    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+};
+
+const savedTheme = localStorage.getItem('darkMode');
+if (savedTheme === 'enabled') {
+    setTheme(true);
+}
+
 darkModeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    darkModeToggle.classList.toggle('dark-mode');
+    const iscurrentlyDark = document.body.classList.contains('dark-mode');
+    setTheme(!iscurrentlyDark);
 });
 
 // Dynamically load profile photo
