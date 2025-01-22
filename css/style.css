@@ -64,9 +64,8 @@ body.dark-mode {
 
 .switch {
     position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 33px;
+    width: 50px;
+    height: 30px;
 }
 
 .switch input {
@@ -80,11 +79,12 @@ body.dark-mode {
     cursor: pointer;
     top: 0;
     left: 0;
-    right: 0;
+    right: -7px;
     bottom: 0;
     background-color: var(--clr-hover-accent);
     transition: 0.4s;
     border-radius: 34px;
+    z-index: 2;
 }
 
 .slider:before {
@@ -93,9 +93,9 @@ body.dark-mode {
     height: 26px;
     width: 26px;
     border-radius: 50%;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
+    left: 3px;
+    bottom: 2px;
+    background-color: var(--clr-light);
     transition: 0.4s;
 }
 
