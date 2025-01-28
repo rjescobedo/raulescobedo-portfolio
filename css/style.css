@@ -879,6 +879,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 .section_title--form {
     position: relative;
+    color: var(--clr-accent);
 }
 
 .section_title--form::after {
