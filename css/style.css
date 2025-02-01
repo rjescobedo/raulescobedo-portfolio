@@ -1014,13 +1014,18 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hire_me-hero {
-    background-image: url('/img/hire_me-hero.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     height: 700px;
+    transition: background-image 1s ease-in-out; /* Transition for smooth background change */
+}
+
+.hire_me-hero.loaded {
+    background-image: url('/img/hire_me-hero.png');
+    background-blend-mode: lighten;
 }
 
 .hire_me-section_one-container {

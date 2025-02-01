@@ -40,5 +40,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 //Update dynamically the copyrights year
 const copyrightsYear = document.getElementById('copyrights-year');
 const currentYear = new Date().getFullYear();
-console.log(currentYear)
 copyrightsYear.textContent = currentYear;
