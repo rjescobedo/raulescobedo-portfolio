@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raul is a Houston-based software developer specializing in web and mobile development. Explore his portfolio, skills, and services to bring your digital projects to life." />
+    <title>Contact Me</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"/> 
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />-->
+    <!-- endbuild -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+             <div class="container-fluid">
+                 <div class="logo">
+                     <a href="index.html">
+                        <img src="img/light-mode-logo.png" alt="Web Studio Logo of a gear">
+                        <h5>Raul's Web Studio</h5>
+                    </a>
+                 </div>
+                 <div class="hamburger ml-auto" id="hamburger-1" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavbar">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                 <div class="justify-content-end collapse navbar-collapse" id="portfolioNavbar">
+                     <ul class="navbar-nav">
+                         <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                         <li class="nav-item"><a class="nav-link" href="#services"><i class="fas fa-code"></i> Skills</a></li>
+                         <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user"></i> About Me</a></li>
+                         <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                         <li class="nav-item"><a class="nav-link" href="#education"><i class="fas fa-school"></i> Education</a></li>
+                         <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-address-card"></i> Contact</a></li>
+                         <li class="nav-item"><a class="nav-link" href="hire-me.html"><i class="fas fa-laptop-code"></i> Hire Me</a></li>
+                         <li class="nav-item"><a class="nav-link" href="contact-espanol.html"><i class="fa fa-language fa-lg"></i> Español</a></li>
+                         <li class="nav-item m-auto">
+                            <label class="switch">
+                                <input type="checkbox" id="dark-mode-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+         </nav>
+    </header>
+   
+    <!-- Contact Form -->
+    <section id="contact" class="contact-form-container">
+        <h1 class="section_title section_title--form">Get in touch with me!</h1>
+        <div class="contact-info">
+            <ul class="contact-list">
+                <li class="contact-item">
+                    <a href="mailto:raul.escobedo1012@gmail.com">
+                        <i class="fa fa-envelope fa-lg"> raul.escobedo1012@gmail.com</i>
+                    </a>
+                </li>
+                <li class="contact-item">
+                    <a href="tel:+15757770541">
+                        <i class="fa fa-phone fa-lg"> (575) 777-0541</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <form name="english-form" id="contact-form" class="form" method="POST" data-netlify="true">
+            <div class="form-item">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="on" required>
+            </div>
+            <div class="form-item">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="on" required>
+            </div>
+            <div class="form-item">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" autocomplete="on" placeholder="Your Number">
+            </div>
+            <div class="form-item">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Tell me how I can assist you" autocomplete="off" required></textarea>
+            </div>
+            <div class="form-button">
+                <button class="custom-button" type="submit">Send Message</button>
+                <p id="status"></p>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Social Media Links -->
+            <ul class="social-list">
+                <li class="social-list_item">
+                    <a class="social-list_link" href="https://www.linkedin.com/in/raul-e-developer" target="_blank">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                </li>
+                <li class="social-list_item">
+                    <a class="social-list_link" href="https://nextdoor.com/pages/rauls-web-studio-kingwood-tx/?init_source=org_pages&share_platform=10&utm_campaign=1738339011019" target="_blank">
+                        <i class="fas fa-home fa-lg"></i>
+                    </a>
+                </li>
+                <li class="social-list_item">
+                    <a class="social-list_link" href="https://github.com/rjescobedo" target="_blank">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                </li>
+                <li class="social-list_item">
+                    <a class="social-list_link" href="https://codepen.io/rjescobedo" target="_blank">
+                        <i class="fab fa-codepen fa-lg"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Copyright & Legal -->
+             <div>
+                 <p class="footer-text"><strong>💻 by Raul Escobedo</strong> | © <span id="copyrights-year"></span> All Rights Reserved</p>
+             </div>
+        </div>
+    </footer>
+    <!-- build:js js/main.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/form.js" defer></script>
+    <script src="js/nav.js" defer></script>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/extensions.js" defer></script>
+</body>
+</html>
