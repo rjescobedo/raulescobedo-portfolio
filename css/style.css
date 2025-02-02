@@ -224,8 +224,50 @@ h5 { font-size: var(--fs-h5) }
 }
 
 /* Header */
+/* Default (Light Mode) */
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 3px;
+    outline: none;
+}
 
-.logo a{
+.logo img {
+    height: 40px;
+    width: auto;
+    transition: filter 0.3s ease-in-out;
+    outline: none;
+}
+
+.logo h5 {
+    font-size: 1.2rem;
+    color: var(--clr-dark); /* Default text color (black) */
+    text-shadow: 0px 0px 5px white;
+    margin: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+.dark-mode .logo img {
+    filter: invert(1); /* Makes logo white (if it's dark) */
+}
+
+.dark-mode .logo h5 {
+    color: white; /* Makes text white */
+    text-shadow: 1px 1px 2px var(--clr-dark);
+}
+
+.hire_me-nav .logo img {
+    filter: invert(1);
+}
+
+.hire_me-nav .logo h5 {
+    color: white;
+    text-shadow: 1px 1px 2px var(--clr-dark);
+}
+
+/* .logo a{
     max-width: 100px;
     color: var(--clr-dark);
     text-decoration: none;
@@ -257,7 +299,7 @@ h5 { font-size: var(--fs-h5) }
 .hire_me-nav .logo a:hover {
     color: var(--clr-accent);
     text-shadow: 0 0 1px black;
-}
+} */
 
 /* Navigation */
 .navbar {
