@@ -24,3 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    let sections = document.querySelectorAll("section");
+    let observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                window.history.replaceState(null, "", "/" + entry.target.id);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    sections.forEach((section) => observer.observe(section));
+});
