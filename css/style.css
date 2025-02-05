@@ -14,7 +14,7 @@
     --fw-bold: 700;
 
     --clr-light: #fff;
-    --clr-dark: rgb(28, 28, 28);
+    --clr-dark: #1c1c1c;
     --clr-hover-dark: #1c1c1cc1; 
     --clr-accent: #fcb928;
     --clr-hover-accent: rgb(157, 111, 11); 
@@ -408,7 +408,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .name-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 @media (min-width: 600px) {
@@ -435,7 +435,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .name-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
 
@@ -462,11 +462,11 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .section_subtitle--intro {
-        font-size: 2.2rem;
+        font-size: 2.1rem;
     }
 
     .name-title {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 }
 
@@ -732,7 +732,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 /* Footer */
 .footer {
     background-color: var(--clr-accent);
-    color: var(--clr-dark);
+    color: black;
     padding: 1rem;
     font-size: var(--fs-h3);
 }
@@ -749,7 +749,6 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 .footer_link:hover,
 .social-list_link:hover {
     text-decoration: none;
-    color: var(--clr-hover-dark);
     text-align: center;
 }
 
@@ -783,6 +782,24 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 .social-list_item:hover {
     transform: scale(1.1);
+}
+
+.thumbtack-icon {
+    width: 60px;
+}
+
+.nextdoor-icon {
+    width: 62px;
+}
+
+@media (min-width: 800px) {
+    .thumbtack-icon {
+        width: 64px;
+    }
+
+    .nextdoor-icon {
+        width: 67px;
+    }
 }
 
 /* Individual Portfolio Item Styles */
