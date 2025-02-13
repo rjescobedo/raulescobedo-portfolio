@@ -1378,10 +1378,20 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     color: var(--clr-accent);
     font-size: 1rem;
     text-align: right;
+    padding: 0;
+    margin: 0;
 }
 
 .dark-mode .review-name {
     color: var(--clr-dark);
+}
+
+.review-source {
+    color: var(--clr-light);
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    font-size: .7rem;
 }
 
 /* Read More Button */

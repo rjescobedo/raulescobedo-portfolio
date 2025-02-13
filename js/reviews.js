@@ -2,12 +2,14 @@ const googleReviews = [
     {
         name: "Kaitlin E.",
         review: "Raul designed an app for me to use with my clients. It is easy to navigate, professional, and works on both the phone and on safari. I’m impressed with his creativity and specific attention to detail that he brings in the design itself. He also explained thoroughly how to work through the site and was open to input from me along the way. He communicated really well with me and continues to do so if there’s any change I want to make to how the app looks or runs.",
-        rating: 5
+        rating: 5,
+        source: 'Google'
     }, 
     {
         name: "Enid P.",
         review: "Raul captured my vision perfectly & went above and beyond! He was quick, responsive, and so extremely creative in his work.",
-        rating: 5
+        rating: 5,
+        source: 'Thumbtack'
     }
 ];
 
@@ -40,6 +42,10 @@ function displayReviews(reviews) {
         reviewName.classList.add('review-name');
         reviewName.textContent = `- ${review.name}`;
 
+        const reviewSource = document.createElement('p');
+        reviewSource.classList.add('review-source');
+        reviewSource.textContent = `${review.source} Review`;
+
         reviewContainer.appendChild(reviewRating);
         reviewContainer.appendChild(reviewDescription);
 
@@ -60,6 +66,7 @@ function displayReviews(reviews) {
         }
 
         reviewContainer.appendChild(reviewName);
+        reviewContainer.appendChild(reviewSource);
         reviewList.appendChild(reviewContainer);
     });
 }
