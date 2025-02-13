@@ -1394,6 +1394,10 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     font-size: .7rem;
 }
 
+.dark-mode .review-source {
+    color: var(--clr-dark);
+}
+
 /* Read More Button */
 .read-more-btn {
     background-color: transparent;
