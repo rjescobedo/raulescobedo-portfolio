@@ -13,7 +13,7 @@
     --fw-reg: 400;
     --fw-bold: 700;
 
-    --clr-light: #fff;
+    --clr-light: rgb(255, 255, 255);
     --clr-dark: #1c1c1c;
     --clr-hover-dark: #1c1c1cc1; 
     --clr-accent: #fcb928;
@@ -297,7 +297,6 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 .nav-item .nav-link:hover {
     color: var(--clr-accent);
-    transform: scale(1.05);
     text-shadow: 0 0 1px black;
 }
 
@@ -309,6 +308,46 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 .hire_me-nav .nav-item .nav-link:hover {
     color: var(--clr-accent);
     text-shadow: 0 0 1px black;
+}
+
+/* Default dropdown styling */
+.dropdown {
+    margin: auto;
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 150px;
+}
+
+/* Dark mode styling */
+.dark-mode .dropdown-menu {
+    background-color: #1c1c1c;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown item styles */
+.dropdown-item {
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+/* Dark mode hover effects */
+.dark-mode .dropdown-item:hover,
+.dark-mode .dropdown-item:focus,
+.dark-mode .dropdown-item::selection {
+    background-color: var(--clr-light);
+    color: var(--clr-accent); /* Ensures visibility */
+}
+
+/* Light mode hover effects */
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item::selection {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
 }
 
 @media (min-width: 992px) {
