@@ -21,7 +21,7 @@
     </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-nav">
             <div class="container-fluid">
                 <div class="logo">
                     <a href="espanol.html">
@@ -48,8 +48,8 @@
                                <li class="nav-item"><a class="nav-link dropdown-item" href="espanol.html#education-espanol"><i class="fas fa-school"></i> Educación</a></li>
                            </ul>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href="hire-me-espanol.html"><i class="fas fa-laptop-code"></i> Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact-espanol.html"><i class="fa fa-address-card"></i> Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="hire-me-espanol.html"><i class="fas fa-laptop-code"></i> Contrátame</a></li>
                         <li class="nav-item"><a class="nav-link" href="okb.html"><i class="fa fa-language fa-lg"></i> English</a></li>
                         <li class="nav-item m-auto">
                            <label class="switch">
@@ -97,38 +97,50 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
+            <!-- Raul's Web Studio Logo & Name -->
+            <div class="footer-brand">
+                <a href="espanol.html">
+                    <img src="img/light-mode-logo.png" alt="Web Studio Logo of a gear">
+                </a>
+                <h3 class="footer-title">Raul's Web Studio</h3>
+            </div>
+    
+            <!-- Quick Links -->
+            <ul class="quick-links">
+                <li><a href="espanol.html">Inicio</a></li>
+                <li><a href="espanol.html#about-espanol">Acerca de</a></li>
+                <li><a href="hire-me-espanol.html">Servicios</a></li>
+                <li><a href="contact-espanol.html">Contacto</a></li>
+            </ul>
+    
             <!-- Social Media Links -->
             <ul class="social-list">
                 <li class="social-list_item">
-                    <a class="social-list_link" href="https://www.linkedin.com/in/raul-e-developer" target="_blank">
+                    <a class="social-list_link" href="https://www.linkedin.com/in/raul-e-developer" target="_blank" aria-label="LinkedIn Profile">
                         <i class="fab fa-linkedin fa-lg"></i>
                     </a>
                 </li>
                 <li class="social-list_item nextdoor-icon">
-                    <a class="social-list_link" href="https://nextdoor.com/pages/rauls-web-studio-kingwood-tx/?init_source=org_pages&share_platform=10&utm_campaign=1738339011019" target="_blank">
+                    <a class="social-list_link" href="https://nextdoor.com/pages/rauls-web-studio-kingwood-tx/?init_source=org_pages&share_platform=10&utm_campaign=1738339011019" target="_blank" aria-label="Nextdoor Business Profile">
                         <img src="img/nextdoor.png" alt="Nextdoor Icon">
                     </a>
                 </li>
-                <li class="social-list_item thumbtack-icon">
-                    <a class="social-list_link" href="https://www.thumbtack.com/tx/kingwood/web-design/rauls-web-studio/service/539487577498058754" target="_blank">
-                        <img src="img/thumbtack-logo.png" alt="Thumbtack Logo">
-                    </a>
-                </li>
                 <li class="social-list_item">
-                    <a class="social-list_link" href="https://github.com/rjescobedo" target="_blank">
+                    <a class="social-list_link" href="https://github.com/rjescobedo" target="_blank" aria-label="GitHub Profile">
                         <i class="fab fa-github fa-lg"></i>
                     </a>
                 </li>
                 <li class="social-list_item">
-                    <a class="social-list_link" href="https://codepen.io/rjescobedo" target="_blank">
+                    <a class="social-list_link" href="https://codepen.io/rjescobedo" target="_blank" aria-label="CodePen Profile">
                         <i class="fab fa-codepen fa-lg"></i>
                     </a>
                 </li>
             </ul>
+    
             <!-- Copyright & Legal -->
-             <div>
+            <div class="footer-bottom">
                 <p class="footer-text">© <span id="copyrights-year"></span> Raul's Web Studio. All Rights Reserved.</p>
-             </div>
+            </div>
         </div>
     </footer>
     <!-- build:js js/main.js -->

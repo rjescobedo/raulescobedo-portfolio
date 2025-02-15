@@ -27,4 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('is-active');
     });
+
+    // Handles the navbar so it begins fixed and goes away gracefully
+    window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".custom-nav");
+        let scrollTop = window.scrollY;
+
+        if (scrollTop > 70) {
+            // If scrolled past 70px, hide navbar
+            navbar.classList.add("nav-hidden");
+        } else {
+            // If at the top (scrollY === 0), show navbar
+            navbar.classList.remove("nav-hidden");
+        }
+    });
 });
