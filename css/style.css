@@ -836,6 +836,12 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0;
 }
 
+.quick-links li {
+    font-size: var(--fs-h4);
+    padding: .2rem;
+    border-bottom: 1px dotted black;
+}
+
 .footer-text {
     font-size: 1rem;
     padding: 0;
