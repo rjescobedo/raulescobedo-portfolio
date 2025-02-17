@@ -6,7 +6,7 @@ const handleImageLoad = () => {
 
 // Create a new Image object to check if the background image is loaded
 const img = new Image();
-img.src = '/img/hire_me-hero.png';  // The path to your image
+img.src = '/img/hire_me-hero.avif';  // The path to your image
 
 // Check if the image has already loaded (cached) or add an event listener
 img.onload = handleImageLoad;

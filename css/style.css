@@ -26,6 +26,11 @@
     --fs-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+
+    @font-face {
+        font-family: 'Lora';
+        font-display: swap;
+      }
 }
 
 @media (min-width: 800px) {
@@ -455,6 +460,8 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: var(--bs);
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    width: 500px;
+    height: auto;
 }
 
 .intro_img.loaded {
@@ -607,6 +614,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 .about-me_img {
     box-shadow: var(--bs);
+    width: 100%;
 }
 
 @media (min-width: 600px) {
@@ -826,7 +834,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-brand img {
-    width: 80px;
+    width: 60px;
     margin: auto;
 }
 
@@ -1156,7 +1164,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hire_me-hero.loaded {
-    background-image: url('/img/hire_me-hero.png');
+    background-image: url('/img/hire_me-hero.avif');
     background-blend-mode: lighten;
 }
 
