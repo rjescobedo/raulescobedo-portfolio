@@ -89,18 +89,18 @@ body.dark-mode {
     background-color: var(--clr-accent);
     transition: 0.4s;
     border-radius: 34px;
-    border: 1px solid white;
+    border: 1px solid var(--clr-light);
     z-index: 2;
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 15px;
-    width: 15px;
+    height: 14px;
+    width: 14px;
     border-radius: 50%;
     left: 2px;
-    bottom: 1.5px;
+    bottom: 1.6px;
     background-color: var(--clr-light);
     transition: 0.4s;
 }
