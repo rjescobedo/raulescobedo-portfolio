@@ -41,4 +41,5 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.classList.remove("nav-hidden");
         }
     });
+
 });
