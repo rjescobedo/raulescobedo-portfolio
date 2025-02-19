@@ -71,4 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.classList.remove("nav-hidden"); // Shows navbar at top
         }
     });
+
+    // Close navbar when clicking outside
+
+    document.addEventListener('click', (event) => {
+        const isClickInsideNavbar = navbarNav.contains(event.target || hamburger.contains(event.target));
+
+        if (!isClickInsideNavbar) {
+            closeNavbar();
+        }
+    })
 });
