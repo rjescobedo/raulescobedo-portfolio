@@ -62,7 +62,7 @@ function displayReviews(reviews) {
 function generateStars(rating) {
     let stars = "";
     for (let i = 0; i < 5; i++) {
-        stars += i < rating ? "⭐" : "☆";
+        stars += i < rating ? " ⭐ " : " ☆ ";
     }
     return stars;
 }

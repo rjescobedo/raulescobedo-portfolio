@@ -1472,7 +1472,6 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 .dark-mode .review-card {
     background-color: var(--clr-light);
-    box-shadow: 0 0 10px 2px rgba(252, 185, 40, 0.8);
 }
 
 .dark-mode .review-card:hover {
@@ -1480,8 +1479,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .review-rating {
-    font-size: 1.1rem;
-    color: gold;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
     text-align: center;
 }
