@@ -118,8 +118,18 @@
                 <input type="tel" id="phone" name="phone" autocomplete="on" placeholder="Your Number">
             </div>
             <div class="form-item">
+                <label for="subject">Subject:</label>
+                <select name="subject" id="subject">
+                    <option value="">Select a subject...</option>
+                    <option value="question">I have a question about your services</option>
+                    <option value="quote">I would like to request a quote</option>
+                    <option value="support">I need help with my website</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-item">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Tell me how I can assist you" autocomplete="off" required></textarea>
+                <textarea id="message" name="message" placeholder="Tell me how I can help you" autocomplete="off" required></textarea>
             </div>
             <div class="form-button">
                 <button class="custom-button" type="submit">Send Message</button>
