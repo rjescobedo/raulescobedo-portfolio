@@ -1136,18 +1136,56 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     height: 100px;
 }
 
-.form-item select {
+/* Remove default styling from select */
+select {
+    -webkit-appearance: none;  /* iOS */
+    -moz-appearance: none;     /* Firefox */
+    appearance: none;          /* General Reset */
+    background-color: var(--clr-light);    /* Set the background */
     border-radius: 4px;
     border: none;
     padding: 10px;
+    width: 100%;
+    color: var(--clr-dark);               /* Text color */
+    cursor: pointer;          /* Pointer cursor */
+}
+
+/* Style for the selected option (active state) */
+select:focus {
+    border-color: var(--clr-accent);     /* Blue border when focused */
+}
+
+/* Style the individual options */
+select option {
+    background-color: var(--clr-light);    /* Option background color */
+    color: var(--clr-dark);               /* Option text color */
+    padding: 10px;             /* Padding inside options */
+}
+
+/* Custom arrow (hide default one) */
+.select-wrapper {
+    position: relative;
+    width: 100%; /* Or adjust width as needed */
     margin-top: 10px;
 }
 
-.form-item select:hover {
-    cursor: pointer;
+.select-wrapper::after {
+    content: "▼"; /* Unicode arrow */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--clr-dark);  /* Custom arrow color */
+    pointer-events: none;
+    font-size: 12px;
 }
 
-.form-item input:focus, textarea:focus {
+/* Add custom border color on hover */
+select:hover {
+    border-color: var(--clr-accent);
+}
+
+.form-item input:focus, textarea:focus, select:focus{
     border-color: rgba(28, 28, 28, .5);
     box-shadow: 0 0 6px rgba(28, 28, 28, 1);
 }
