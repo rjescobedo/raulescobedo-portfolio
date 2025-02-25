@@ -768,7 +768,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   
   .portfolio_card:hover .portfolio_img {
     transform: scale(1.05);
-    opacity: 0.85;
+    opacity: 0.95;
   }
 
 /* My Education */
@@ -1097,8 +1097,8 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: var(--bs);
     padding: 1rem;
     border-radius: 10px;
-    width: 100%;
     margin: 1rem;
+    width: 90%;
 }
 
 .dark-mode .form {

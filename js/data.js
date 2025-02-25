@@ -7,8 +7,8 @@ export const googleReviews = [
     }, 
     {
         name: "Enid P.",
-        review: "Raul captured my vision perfectly & went above and beyond! He was quick, responsive, and so extremely creative in his work.",
+        review: "I cannot express my gratitude enough for Raul Escobedo and the services he provided for my business! He did an exceptional job creating my website. He was fast, extremely available, and used my little vision to create something so perfect. He does a great great job!!",
         rating: 5,
-        source: 'Thumbtack'
+        source: 'Google'
     }
 ];
