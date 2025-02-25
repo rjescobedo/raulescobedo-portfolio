@@ -991,15 +991,16 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .portfolio-item-social-list_item {
-    margin: 0 .5em;
+    margin: 0;
 }
 
 .portfolio-item-social-list_item i {
-    margin: 0 .5rem;
+    margin: 5px;
 }
 
 .portfolio-item-social-list_link i {
     transition: all 0.3s ease;
+    margin: 1rem;
 }
 
 .portfolio-item-social-list_link i:hover {
