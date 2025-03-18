@@ -10,5 +10,11 @@ export const googleReviews = [
         review: "I cannot express my gratitude enough for Raul Escobedo and the services he provided for my business! He did an exceptional job creating my website. He was fast, extremely available, and used my little vision to create something so perfect. He does a great great job!!",
         rating: 5,
         source: 'Google'
-    }
+    },
+    {
+        name: "Alexis T.",
+        review: "Raul has done a amazing job with our Life Group Softball webpage. The amount of detail he has added was above and beyond from what we requested, the update he makes to the page are lightning fast. Ever since we have done the website we have grown in member count and our members are now able to stay updated online if not able to make it to a meet. With service and performance that I have received it's a no-brainer to add this service to your business.",
+        rating: 5,
+        source: 'Google'
+    },
 ];
