@@ -13,12 +13,12 @@
     --fw-reg: 400;
     --fw-bold: 700;
 
-    --clr-light: rgb(255, 255, 255);
+    --clr-light: #ffffff;
     --clr-light-grey: rgb(225, 224, 224);
-    --clr-dark: rgb(28, 28, 28);
+    --clr-dark: #1c1c1c;
     --clr-hover-dark: #1c1c1cc1; 
-    --clr-accent: #fcb928;
-    --clr-hover-accent: rgb(157, 111, 11); 
+    --clr-accent: #ef233c;
+    --clr-hover-accent: #a80f21; 
 
     /* Responsive Font Sizes */
     --font-responsive-xs: clamp(12px, 1.5vw, 14px);
@@ -93,8 +93,8 @@ body.dark-mode {
     height: 14px;
     width: 14px;
     border-radius: 50%;
-    left: 2px;
-    bottom: 1.6px;
+    left: 2.3px;
+    bottom: 1.8px;
     background-color: var(--clr-light);
     transition: 0.4s;
 }
@@ -143,7 +143,7 @@ strong { font-weight: var(--fw-bold) ;}
 
 .custom-button a {
     text-decoration: none;
-    color: var(--clr-dark);
+    color: var(--clr-light);
     font-size: var(--font-responsive-sm);
 }
 
@@ -151,13 +151,12 @@ strong { font-weight: var(--fw-bold) ;}
     outline: none;
 }
 
-.custom-button a:hover {
-    color: var(--clr-dark);
-}
+
 
 .custom-button:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 4px 8px rgba(252, 185, 40, .9);
+    background-color: var(--clr-hover-accent);
+    transform: translateY(-6px);
+    box-shadow: 0 4px 8px rgba(239, 35, 60, .8);
 }
 
 /* Typography */
@@ -198,7 +197,7 @@ p { font-size: var(--font-responsive-sm) }
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
-    color: var(--clr-dark);
+    color: var(--clr-light);
     border-radius: 3px;
 }
 
@@ -250,18 +249,9 @@ p { font-size: var(--font-responsive-sm) }
     transition: color 0.3s ease-in-out;
 }
 
-/* Dark Mode */
-.dark-mode .logo img {
-    filter: invert(1); /* Makes logo white (if it's dark) */
-}
-
 .dark-mode .logo h5 {
     color: white; /* Makes text white */
     text-shadow: 1px 1px 2px var(--clr-dark);
-}
-
-.hire_me-nav .logo img {
-    filter: invert(1);
 }
 
 .hire_me-nav .logo h5 {
@@ -299,7 +289,6 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 .nav-item .nav-link:hover {
     color: var(--clr-accent);
-    text-shadow: 0 0 1px black;
 }
 
 .hire_me-nav .nav-item .nav-link {
@@ -599,7 +588,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .service h3 {
-    color: var(--clr-accent);
+    color: var(--clr-light);
     font-size: var(--font-responsive-md);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
@@ -702,7 +691,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
   
   .my-work h5 {
-    color: var(--clr-dark);
+    color: var(--clr-light);
     width: 350px;
     margin: 0 auto 2rem;
   }
@@ -725,7 +714,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   
   .portfolio_card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 15px 10px rgba(252, 185, 40, 0.8);
+    box-shadow: 0 0 15px 10px rgba(239, 35, 60, .8);
   }
   
   .portfolio_item {
@@ -754,17 +743,16 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     background-color: var(--clr-dark);
   }
 
-  .dark-mode .portfolio_card_content h3 {
-    color: var(--clr-accent);
-  }
+
   .dark-mode .portfolio_card_content p {
-    color: var(--clr-ligh);
+    color: var(--clr-light);
   }
   
   .portfolio_card_content h3 {
     margin: 0 0 0.5rem;
     font-size: var(--font-responsive-md);
-    color: var(--clr-accent);
+    color: var(--clr-light);
+    font-weight: var(--fw-bold);
   }
   
   .portfolio_card_content p {
@@ -859,7 +847,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 /* Footer */
 .footer {
     background-color: var(--clr-accent);
-    color: black;
+    color: var(--clr-light);
     padding: 1rem;
 }
 
@@ -893,11 +881,6 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 .footer-brand img {
     width: 60px;
     margin: auto;
-    transition: all .3s ease;
-}
-
-.footer-brand img:hover {
-    transform: scale(1.05);
 }
 
 .quick-links {
@@ -909,7 +892,6 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 .quick-links li {
     font-size: var(--font-responsive-md);
     padding: .2rem;
-    border-bottom: 1px dotted black;
     transition: all .3s ease;
 }
 
@@ -944,6 +926,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 .nextdoor-icon {
     width: 60px;
+    filter: invert(1);
 }
 
 @media (min-width: 557px) {
@@ -1030,7 +1013,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .portfolio-item-social-list_link i:hover {
-    box-shadow: 0 0 20px 8px rgba(252, 185, 40, .9);
+    box-shadow: 0 0 20px 8px rgba(239, 35, 60, .8);
     transform: scale(1.1);
 }
 
@@ -1052,7 +1035,6 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Contact Form */
-
 .contact-form-container {
     display: flex;
     justify-content: center;
@@ -1075,7 +1057,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     font-size: var(--font-responsive-md);
     padding: 1rem 0;
     color: var(--clr-dark);
-    transition: transform .5s ease, text-shadow .5s ease;
+    transition: transform .5s ease;
 }
 
 .contact-item a:focus {
@@ -1084,25 +1066,22 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 .contact-item i:hover {
     transform: scale(1.05);
-    text-shadow: 0 0 5px rgba(252, 185, 40, .9);
 }
 
 .dark-mode .contact-item i {
     padding: 1rem 0;
     color: var(--clr-light);
-    transition: transform .3s ease, text-shadow .3s ease;
+    transition: transform .3s ease;
 }
 
 .dark-mode .contact-item i:hover {
     transform: scale(1.05);
-    text-shadow: 0 0 10px rgba(252, 185, 40, 1);
 }
 
 .section_title--form {
     position: relative;
     font-size: var(--font-responsive-xxxl);
     color: var(--clr-accent);
-    text-shadow: 1px 1px 2px var(--clr-dark);
 }
 
 .section_title--form::after {
@@ -1143,10 +1122,6 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     color: var(--clr-light);
     font-size: var(--font-responsive-sm);
     font-weight: 600;
-}
-
-.dark-mode .form-item label {
-    color: var(--clr-dark);
 }
 
 .form-item input {
@@ -1229,12 +1204,12 @@ select:hover {
 
 .form-button .custom-button {
     background-color: var(--clr-accent);
-    color: var(--clr-dark);
+    color: var(--clr-light);
     width: 150px;
 }
 
 .form-button .custom-button:hover {
-    box-shadow: 0 4px 8px rgba(252, 185, 40, .9);
+    box-shadow: 0 4px 8px rgba(239, 35, 60, .8);
 }
 
 .dark-mode .form-button .custom-button {
@@ -1257,7 +1232,7 @@ select:hover {
   }
   
   #status.error {
-    color: red;
+    color: var(--clr-accent);
     font-weight: bold;
   }
 
@@ -1302,7 +1277,7 @@ select:hover {
 }
 
 .hire_me-section_one-container h1 {
-    color: var(--clr-accent);
+    color: var(--clr-light);
     font-size: var(--font-responsive-xxxl);
     padding: 0;
     margin: 0;
@@ -1399,7 +1374,7 @@ select:hover {
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 15px 5px rgba(252, 185, 40, 0.8);
+    box-shadow: 0 0 15px 5px rgba(239, 35, 60, .8);
     border: 2px solid var(--clr-accent);
 }
 
@@ -1547,7 +1522,7 @@ select:hover {
 
 .review-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 15px 5px rgba(252, 185, 40, 0.8);
+    box-shadow: 0 0 15px 5px rgba(239, 35, 60, .8);
 }
 
 .dark-mode .review-card {
@@ -1555,7 +1530,7 @@ select:hover {
 }
 
 .dark-mode .review-card:hover {
-    box-shadow: 0 0 15px 4px rgba(252, 185, 40, 0.8);
+    box-shadow: 0 0 15px 4px rgba(239, 35, 60, .8);
 }
 
 .review-rating {
@@ -1586,9 +1561,7 @@ select:hover {
     margin: 0;
 }
 
-.dark-mode .review-name {
-    color: var(--clr-dark);
-}
+
 
 .review-source {
     color: var(--clr-light);
@@ -1605,7 +1578,7 @@ select:hover {
 /* Read More Button */
 .read-more-btn {
     background-color: transparent;
-    color: var(--clr-accent);
+    color: var(--clr-light);
     font-size: 0.9rem;
     border: none;
     cursor: pointer;
