@@ -208,13 +208,14 @@ p { font-size: var(--font-responsive-sm) }
 
 .section_subtitle--projects {
     background: var(--clr-accent);
-    padding: .25em 1em;
+    padding: .25em 0;
     font-family: var(--ff-secondary);
     margin: 0 auto 2em auto;
     color: var(--clr-dark);
     border-radius: 3px;
     font-size: var(--font-responsive-md);
     text-align: center;
+    max-width: 250px;
 }
 
 
