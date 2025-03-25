@@ -550,7 +550,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 /* My Skills */
 .my-services {
-    background-image: url('../img/homepage-seen-computer-screen.avif');
+    background-image: url('../img/ui-ux-representations-with-laptop.avif');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -594,7 +594,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 @media (min-width: 800px) {
     .my-services {
-        height: 90vh;
+        height: 80vh;
     }
     .services {
         display: flex;
