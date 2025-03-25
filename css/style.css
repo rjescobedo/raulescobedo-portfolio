@@ -1167,7 +1167,6 @@ select option {
     background-color: var(--clr-light);    /* Option background color */
     color: var(--clr-dark);               /* Option text color */
     padding: 10px;             /* Padding inside options */
-    font-size: var(--font-responsive-xs);
 }
 
 /* Custom arrow (hide default one) */
@@ -1185,7 +1184,11 @@ select option {
     transform: translateY(-50%);
     color: var(--clr-dark);  /* Custom arrow color */
     pointer-events: none;
-    font-size: 12px;
+}
+
+.select-wrapper select {
+    font-size: var(--font-responsive-sm);
+    padding: 5px 10px;
 }
 
 /* Add custom border color on hover */
@@ -1225,6 +1228,8 @@ select:hover {
 #status {
     margin-top: 15px;
     font-size: var(--font-responsive-sm);
+    background-color: var(--clr-light);
+    border-radius: 4px;
   }
   
   #status.success {
