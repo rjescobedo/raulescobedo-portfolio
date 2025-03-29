@@ -13,7 +13,7 @@
     --fw-reg: 400;
     --fw-bold: 700;
 
-    --clr-light: #ffffff;
+    --clr-light: rgb(255, 255, 255);
     --clr-light-grey: rgb(225, 224, 224);
     --clr-dark: #1c1c1c;
     --clr-hover-dark: #1c1c1cc1; 
@@ -1464,6 +1464,7 @@ select:hover {
 }
 
 .hire_me-reviews {
+    background-color: var(--clr-dark);
     width: 100%;
     padding: 4rem 1rem;
 }
@@ -1474,6 +1475,7 @@ select:hover {
 
 .reviews-title {
     font-size: var(--font-responsive-xxl);
+    color: var(--clr-light);
     margin-bottom: 1rem;
 }
 
@@ -1483,7 +1485,7 @@ select:hover {
     width: 2em;
     height: 2px;
     margin: 0.5em auto;
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     opacity: 0.5;
 }
 
@@ -1504,7 +1506,7 @@ select:hover {
     background: var(--clr-dark);
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--clr-accent);
     width: 100%;
     max-width: 400px;
     text-align: left;
@@ -1514,14 +1516,6 @@ select:hover {
 .review-card:hover {
     transform: scale(1.02);
     box-shadow: 0 0 15px 5px rgba(239, 35, 60, .8);
-}
-
-.dark-mode .review-card {
-    background-color: var(--clr-light);
-}
-
-.dark-mode .review-card:hover {
-    box-shadow: 0 0 15px 4px rgba(239, 35, 60, .8);
 }
 
 .review-rating {
@@ -1539,10 +1533,6 @@ select:hover {
     white-space: normal;
 }
 
-.dark-mode .review-description {
-    color: var(--clr-dark);
-}
-
 .review-name {
     font-weight: bold;
     color: var(--clr-accent);
@@ -1552,18 +1542,12 @@ select:hover {
     margin: 0;
 }
 
-
-
 .review-source {
     color: var(--clr-light);
     padding: 0;
     margin: 0;
     text-align: right;
     font-size: .7rem;
-}
-
-.dark-mode .review-source {
-    color: var(--clr-dark);
 }
 
 /* Read More Button */
@@ -1577,10 +1561,6 @@ select:hover {
     margin-top: -5px;
     padding: 0;
     text-decoration: underline;
-}
-
-.dark-mode .read-more-btn {
-    color: var(--clr-dark);
 }
 
 /* Responsive Layout */
