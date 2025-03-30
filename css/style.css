@@ -13,7 +13,7 @@
     --fw-reg: 400;
     --fw-bold: 700;
 
-    --clr-light: rgb(255, 255, 255);
+    --clr-light: #ffffff;
     --clr-light-grey: rgb(225, 224, 224);
     --clr-dark: #1c1c1c;
     --clr-hover-dark: #1c1c1cc1; 
@@ -909,15 +909,25 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
 }
 
-.nextdoor-icon {
+.google-icon {
     width: 60px;
     filter: invert(1);
 }
 
+.nextdoor-icon {
+    width: 63px;
+    filter: invert(1);
+}
+
 @media (min-width: 557px) {
-    .nextdoor-icon {
-        width: 67px;
+    .google-icon {
+        width: 65px;
     }
+
+    .nextdoor-icon {
+        width: 65px;
+    }
+
 }
 
 /* Individual Portfolio Item Styles */
