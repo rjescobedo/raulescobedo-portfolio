@@ -1210,7 +1210,7 @@ select:hover {
 
 .form-button .custom-button {
     color: var(--clr-light);
-    width: 150px;
+    width: 160px;
 }
 
 .form-button .custom-button:hover {
