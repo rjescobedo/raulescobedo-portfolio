@@ -1407,7 +1407,7 @@ select:hover {
     padding: 1rem;
     margin: 0;
     text-align: center;
-    font-size: var(--font-responsive-sm);
+    font-size: var(--font-responsive-md);
 }
 
 .work-container {
