@@ -129,7 +129,7 @@ strong { font-weight: var(--fw-bold) ;}
     outline-offset: 3px;
 }
 
-/* Buttons */
+/* Buttons/Links */
 .custom-button {
     background-color: transparent;
     border: 1px solid var(--clr-accent);
@@ -151,12 +151,18 @@ strong { font-weight: var(--fw-bold) ;}
     outline: none;
 }
 
-
-
 .custom-button:hover {
     background-color: var(--clr-accent);
     transform: translateY(-6px);
     box-shadow: 0 4px 8px rgba(239, 35, 60, .8);
+}
+
+.modal-body .link-danger {
+    color: var(--clr-accent) !important;
+}
+
+.modal-body .link-underline-opacity-100-hover {
+    color: var(--clr-accent) !important;
 }
 
 /* Typography */
@@ -1348,8 +1354,9 @@ select:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    max-width: 1000px;
     margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 3rem;
 }
 
 .service-card {
@@ -1377,6 +1384,7 @@ select:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 15px 5px rgba(239, 35, 60, .8);
     border: 2px solid var(--clr-accent);
+    cursor: pointer;
 }
 
 .hire_me-work-me {
@@ -1588,4 +1596,30 @@ select:hover {
     .review-card {
         width: 30%;
     }
+}
+
+/* Services Modals */
+.modal-header {
+    background-color: var(--clr-accent);
+}
+
+.modal-title {
+    font-size: var(--font-responsive-lg);
+    color: var(--clr-light);
+}
+
+.modal-body h3 {
+    font-size: var(--font-responsive-md);
+}
+
+.modal-body p, .modal-body li {
+    font-size: var(--font-responsive-sm);
+}
+
+.modal-body {
+    text-align: left;
+}
+
+.dark-mode .modal-body {
+    background-color: var(--clr-dark);
 }

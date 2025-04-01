@@ -99,35 +99,183 @@
 
         <!-- Services Section -->
         <section class="hire_me-services">
-            <div class="services-container">
-                <h2 class="services-title">What Services I Offer</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h3>💻 Custom Website Design</h3>
-                        <p>A modern, responsive website built to showcase your business.</p>
+        <div class="services-container">
+            <h2 class="services-title">What Services I Offer</h2>
+            <div class="services-grid">
+                <!-- Custom Website Design -->
+                <div class="service-card" data-bs-toggle="modal" data-bs-target="#customWebsiteModal">
+                    <h3>💻 Custom Website Design</h3>
+                    <p>A modern, responsive website built to showcase your business.</p>
+                </div>
+
+                <!-- Mobile Optimization -->
+                <div class="service-card" data-bs-toggle="modal" data-bs-target="#mobileOptimizationModal">
+                    <h3>📱 Mobile Optimization</h3>
+                    <p>Your website will look great on any device.</p>
+                </div>
+
+                <!-- SEO & Performance -->
+                <div class="service-card" data-bs-toggle="modal" data-bs-target="#seoModal">
+                    <h3>🚀 SEO & Performance</h3>
+                    <p>Boost your rankings and website speed for better user experience.</p>
+                </div>
+
+                <!-- Website Maintenance -->
+                <div class="service-card" data-bs-toggle="modal" data-bs-target="#maintenanceModal">
+                    <h3>🔧 Website Maintenance</h3>
+                    <p>Keep your site secure, updated, and running smoothly.</p>
+                </div>
+
+                <!-- Contact Forms & Integrations -->
+                <div class="service-card" data-bs-toggle="modal" data-bs-target="#contactFormsModal">
+                    <h3>📩 Contact Forms & Integrations</h3>
+                    <p>Seamlessly connect with your customers.</p>
+                </div>
+
+                <!-- E-Commerce Solutions -->
+                <div class="service-card" data-bs-toggle="modal" data-bs-target="#ecommerceModal">
+                    <h3>🛒 E-Commerce Solutions</h3>
+                    <p>Launch your online store with a professional setup.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals with Detailed Information -->
+        <!-- Custom Website Design Modal -->
+        <div class="modal fade" id="customWebsiteModal" tabindex="-1" aria-labelledby="customWebsiteLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="customWebsiteLabel">💻 Custom Website Design</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="service-card">
-                        <h3>📱 Mobile Optimization</h3>
-                        <p>Your website will look great on any device.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>🚀 SEO & Performance</h3>
-                        <p>Improve search visibility with optimized content, faster load times, and mobile-friendly design.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>🔧 Website Maintenance</h3>
-                        <p>Ongoing updates to keep your site running smoothly.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>📩 Contact Forms & Integrations</h3>
-                        <p>Connect with your customers easily.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>🛒 E-Commerce Solutions</h3>
-                        <p>Set up an online store to sell your products seamlessly.</p>
+                    <div class="modal-body">
+                        <p>A professional website tailored to your brand, built with modern technologies for a seamless user experience.</p>
+                        <h3>Key Features:</h3>
+                        <ul>
+                            <li>Custom design that reflects your brand identity</li>
+                            <li>Responsive layout for desktop, tablet, and mobile</li>
+                            <li>Optimized for speed and accessibility</li>
+                            <li>Integration with social media and marketing tools</li>
+                        </ul>
+                        <p>Get a website that converts visitors into customers. <a class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="contact.html">Get started today!</a></p>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Mobile Optimization Modal -->
+        <div class="modal fade" id="mobileOptimizationModal" tabindex="-1" aria-labelledby="mobileOptimizationLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="mobileOptimizationLabel">📱 Mobile Optimization</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Ensure your website looks great and functions flawlessly on all devices.</p>
+                        <h3>Why Mobile Optimization Matters:</h3>
+                        <ul>
+                            <li>Improves user experience and engagement</li>
+                            <li>Boosts search engine rankings (Google prioritizes mobile-friendly sites)</li>
+                            <li>Faster loading speeds for mobile users</li>
+                        </ul>
+                        <p>Don’t lose mobile visitors—make your site mobile-friendly. <a class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="contact.html">Start optimizing today!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEO & Performance Modal -->
+        <div class="modal fade" id="seoModal" tabindex="-1" aria-labelledby="seoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="seoLabel">🚀 SEO & Performance Optimization</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Increase your website’s visibility and performance with SEO and speed optimization.</p>
+                        <h3>What’s Included:</h3>
+                        <ul>
+                            <li>Keyword research and content optimization</li>
+                            <li>Faster page load speeds for better user experience</li>
+                            <li>Technical SEO improvements (meta tags, structured data, etc.)</li>
+                        </ul>
+                        <p>Want higher rankings? <a class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="contact.html">Let’s boost your SEO today!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Website Maintenance Modal -->
+        <div class="modal fade" id="maintenanceModal" tabindex="-1" aria-labelledby="maintenanceLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="maintenanceLabel">🔧 Website Maintenance</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Keep your site secure, updated, and running at peak performance.</p>
+                        <h3>Maintenance Services:</h3>
+                        <ul>
+                            <li>Regular security updates and bug fixes</li>
+                            <li>Content updates and website improvements</li>
+                            <li>Backup and recovery solutions</li>
+                        </ul>
+                        <p>Protect your website from downtime. <a class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="contact.html">Let’s discuss maintenance plans!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Forms & Integrations Modal -->
+        <div class="modal fade" id="contactFormsModal" tabindex="-1" aria-labelledby="contactFormsLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="contactFormsLabel">📩 Contact Forms & Integrations</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Make it easy for customers to reach you with professionally designed contact forms and business integrations.</p>
+                        <h3>What’s Included:</h3>
+                        <ul>
+                            <li>Custom-designed contact forms</li>
+                            <li>Automated responses and notifications</li>
+                            <li>Spam protection to prevent unwanted messages</li>
+                        </ul>
+                        <p>Improve customer engagement today! <a class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="contact.html">Let’s set up your contact form!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- E-Commerce Solutions Modal -->
+        <div class="modal fade" id="ecommerceModal" tabindex="-1" aria-labelledby="ecommerceLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="ecommerceLabel">🛒 E-Commerce Solutions</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Sell your products online with a fully functional and optimized e-commerce store.</p>
+                        <h3>Key Features:</h3>
+                        <ul>
+                            <li>Custom online store design</li>
+                            <li>Secure payment integration</li>
+                            <li>Product management system</li>
+                            <li>SEO-friendly product listings</li>
+                            <li>Mobile-friendly shopping experience</li>
+                        </ul>
+                        <p>Turn your business into an online success! <a class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="contact.html">Let’s build your store today!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Why Work with Me Section -->
          <section class="hire_me-work-me">
