@@ -1057,7 +1057,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-item i {
-    font-size: var(--font-responsive-lg);
+    font-size: var(--font-responsive-md);
     padding: 1rem 0;
     color: var(--clr-dark);
     transition: all .3s ease;
