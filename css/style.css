@@ -129,6 +129,16 @@ strong { font-weight: var(--fw-bold) ;}
     outline-offset: 3px;
 }
 
+.section-divider {
+    border-bottom: 1px solid transparent;
+    width: 50%;
+    margin: auto;
+}
+
+.dark-mode .section-divider {
+    border-bottom: 1px solid var(--clr-accent);
+}
+
 /* Buttons/Links */
 .custom-button {
     background-color: transparent;
@@ -688,7 +698,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 .my-work {
     text-align: center;
-    padding: 2rem;
+    padding: 3rem 2rem 4rem;
   }
   
   .my-work h1 {
@@ -1485,7 +1495,7 @@ select:hover {
 .hire_me-reviews {
     background-color: var(--clr-dark);
     width: 100%;
-    padding: 4rem 1rem;
+    padding: 3rem 2rem;
 }
 
 .reviews-container {
@@ -1497,7 +1507,7 @@ select:hover {
 .reviews-title {
     font-size: var(--font-responsive-xxl);
     color: var(--clr-light);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .reviews-title::after {
