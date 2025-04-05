@@ -29,11 +29,16 @@ function displayReviews(reviews) {
         reviewName.classList.add('review-name');
         reviewName.textContent = `${review.name}`;
 
+        const reviewCompany = document.createElement('p');
+        reviewCompany.classList.add('review-company');
+        reviewCompany.textContent = `${review.company}`;
+
         const reviewSource = document.createElement('p');
         reviewSource.classList.add('review-source');
         reviewSource.textContent = `${review.source}`;
 
         reviewContainer.appendChild(reviewRating);
+        reviewContainer.appendChild(reviewSource);
         reviewContainer.appendChild(reviewDescription);
 
         if (isLongReview) {
@@ -53,7 +58,7 @@ function displayReviews(reviews) {
         }
 
         reviewContainer.appendChild(reviewName);
-        reviewContainer.appendChild(reviewSource);
+        reviewContainer.appendChild(reviewCompany);
         reviewList.appendChild(reviewContainer);
     });
 }
