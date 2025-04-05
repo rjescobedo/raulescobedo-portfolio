@@ -27,11 +27,11 @@ function displayReviews(reviews) {
 
         const reviewName = document.createElement('h3');
         reviewName.classList.add('review-name');
-        reviewName.textContent = `- ${review.name}`;
+        reviewName.textContent = `${review.name}`;
 
         const reviewSource = document.createElement('p');
         reviewSource.classList.add('review-source');
-        reviewSource.textContent = `${review.source} Review`;
+        reviewSource.textContent = `${review.source}`;
 
         reviewContainer.appendChild(reviewRating);
         reviewContainer.appendChild(reviewDescription);
