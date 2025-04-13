@@ -515,11 +515,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .section_title {
-    font-size: var(--font-responsive-xxl);
-}
-
-.section_title--intro {
-    margin-top: 1rem;
+    font-size: var(--font-responsive-xl);
 }
 
 @media (min-width: 600px) {
