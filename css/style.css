@@ -1583,11 +1583,11 @@ select:hover {
 /* Individual Review Card */
 .review-card {
     background: var(--clr-dark);
+    margin: 10px 0;
     padding: 1rem;
     border-radius: 8px;
     border: 1px solid var(--clr-accent);
     width: 100%;
-    max-width: 400px;
     text-align: left;
     transition: all 0.3s ease-in-out;
 }
