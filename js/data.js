@@ -21,27 +21,6 @@ export const googleReviews = [
         source: 'Google Review'
     },
     {
-        name: "Mabel H.",
-        company: "New York Life",
-        review: "There is something very special about someone who makes you see his profession as an art, balancing science with aesthetics. He's easy to talk to and great at educating and communicating technological concepts in easy-to-understand ways. I recommend him.",
-        rating: 5,
-        source: 'Alignable Recommendation'
-    },
-    {
-        name: "Josh C.",
-        company: "Restoration 1 of Humble",
-        review: "Raul is a great help for any business that needs help with their Web presence!",
-        rating: 5,
-        source: 'Alignable Recommendation'
-    },
-    {
-        name: "Carlos C.",
-        company: "Storm Guard Roofing & Construction",
-        review: "The owner is a responsible and honest person.",
-        rating: 5,
-        source: 'Alignable Recommendation'
-    },
-    {
         name: "Mario S.",
         company: "Cool-Masters AC & Heating LLC",
         review: "First of all I want to thank Raul for his amazing work on getting my website alive for Cool-Masters AC & Heating LLC! Our website was down due to previous marketing complications. We had trouble getting our website files opened to get the website alive. Luckily I met Raul and he worked hard to get the website back and running is less than the time expected. He was professional and communicative, kept me updated every single step that he was doing. I'm very happy with his work, I highly recommend Raul's Website Studio!",

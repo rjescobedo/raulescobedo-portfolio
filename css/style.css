@@ -1555,7 +1555,6 @@ select:hover {
 .reviews-title {
     font-size: var(--font-responsive-xxl);
     color: var(--clr-light);
-    margin-bottom: 2rem;
 }
 
 .reviews-title::after {
@@ -1563,13 +1562,19 @@ select:hover {
     display: block;
     width: 2em;
     height: 2px;
-    margin: 0.5em auto;
+    margin: .5rem auto 0;
     background: var(--clr-accent);
     opacity: 0.5;
 }
 
 .dark-mode .reviews-title::after {
     background-color: var(--clr-accent);
+}
+
+.reviews-container img {
+    width: 150px;
+    margin: 0 auto 1rem;
+    display: inline-block;
 }
 
 /* Review List Container */
@@ -1659,11 +1664,16 @@ select:hover {
     .review-card {
         width: 40%;
     }
+
 }
 
 @media (min-width: 900px) {
     .review-card {
         width: 30%;
+    }
+
+    .reviews-container img {
+        width: 200px;
     }
 }
 
