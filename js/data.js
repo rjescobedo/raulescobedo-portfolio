@@ -34,4 +34,11 @@ export const googleReviews = [
         rating: 5,
         source: 'Alignable Recommendation'
     },
+    {
+        name: "Mario S.",
+        company: "Cool-Masters AC & Heating LLC",
+        review: "First of all I want to thank Raul for his amazing work on getting my website alive for Cool-Masters AC & Heating LLC! Our website was down due to previous marketing complications. We had trouble getting our website files opened to get the website alive. Luckily I met Raul and he worked hard to get the website back and running is less than the time expected. He was professional and communicative, kept me updated every single step that he was doing. I'm very happy with his work, I highly recommend Raul's Website Studio!",
+        rating: 5,
+        source: 'Google Review'
+    },
 ];
