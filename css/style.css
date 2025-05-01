@@ -1446,6 +1446,15 @@ select:hover {
     cursor: pointer;
 }
 
+.dark-mode .service-card {
+    background-color: var(--clr-accent);
+    border: none;
+}
+
+.dark-mode .service-card h3 {
+    color: var(--clr-light);
+}
+
 .hire_me-work-me {
     background-color: var(--clr-dark);
     color: var(--clr-light);
@@ -1573,7 +1582,7 @@ select:hover {
 
 .reviews-container img {
     width: 150px;
-    margin: 0 auto 1rem;
+    margin: 2rem auto;
     display: inline-block;
 }
 

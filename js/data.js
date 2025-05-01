@@ -27,4 +27,25 @@ export const googleReviews = [
         rating: 5,
         source: 'Google Review'
     },
+    {
+        name: "Mabel H.",
+        company: "New York Life",
+        review: "There is something very special about someone who makes you see his profession as an art, balancing science with aesthetics. He's easy to talk to and great at educating and communicating technological concepts in easy-to-understand ways. I recommend him.",
+        rating: 5,
+        source: 'Alignable Recommendation'
+    },
+    {
+        name: "Josh C.",
+        company: "Restoration 1 of Humble",
+        review: "Raul is a great help for any business that needs help with their Web presence!",
+        rating: 5,
+        source: 'Alignable Recommendation'
+    },
+    {
+        name: "Carlos C.",
+        company: "Storm Guard Roofing & Construction of Spring,TX",
+        review: "The owner is a responsible and honest person.",
+        rating: 5,
+        source: 'Alignable Recommendation'
+    },
 ];
