@@ -1576,6 +1576,14 @@ select:hover {
     display: inline-block;
 }
 
+.reviews-container img {
+    transition: all 0.3s ease-in-out;
+}
+
+.reviews-container img:hover{
+    transform: translateY(-6px);
+}
+
 /* Review List Container */
 .review-list {
     display: flex;
