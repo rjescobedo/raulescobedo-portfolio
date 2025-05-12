@@ -687,12 +687,12 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0;
 }
 
 .education-list-item img {
-    width: 80px;
+    width: 70px;
     transition: all .3s ease-in-out;
 }
 
