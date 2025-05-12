@@ -683,9 +683,21 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     font-size: var(--font-responsive-sm);
 }
 
-.credly-container img {
-    width: 120px;
-    margin: 1rem 0;
+.education-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.education-list-item img {
+    width: 80px;
+    transition: all .3s ease-in-out;
+}
+
+.education-list-item img:hover {
+    transform: scale(1.05);
 }
 
 @media (min-width: 600px) {
@@ -721,9 +733,10 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @media (min-width: 900px) {
-    .credly-container img {
-        width: 150px;
-    }
+    .education-list-item img {
+        width: 120px;
+    }    
+    
 }
 
 
