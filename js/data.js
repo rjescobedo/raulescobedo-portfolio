@@ -28,6 +28,13 @@ export const googleReviews = [
         source: 'Google Review'
     },
     {
+        name: "Doug G.",
+        company: "Huntin' and Fishin' Club",
+        review: "Raul helped design my Shopify website. He did a great job! He was also very responsive anytime I had a question or concern. I will use him in the future if I need any other website help.",
+        rating: 5,
+        source: 'Google Review'
+    },
+    {
         name: "Mabel H.",
         company: "New York Life",
         review: "There is something very special about someone who makes you see his profession as an art, balancing science with aesthetics. He's easy to talk to and great at educating and communicating technological concepts in easy-to-understand ways. I recommend him.",
